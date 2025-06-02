@@ -28,14 +28,6 @@
 
     <!-- Main CSS File -->
     <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
-
-    <!-- =======================================================
-  * Template Name: Strategy
-  * Template URL: https://bootstrapmade.com/strategy-bootstrap-agency-template/
-  * Updated: May 09 2025 with Bootstrap v5.3.6
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
@@ -53,38 +45,164 @@
             <nav id="navmenu" class="navmenu">
                 <ul>
                     <li><a href="#hero" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">Konten</a></li>
+                    <li><a href="#services">Kalkulator</a></li>
+                    <li><a href="#portfolio">Forum</a></li>
                     <li><a href="#team">Team</a></li>
-                    <li class="dropdown"><a href="#"><span>Dropdown</span> <i
+                    <li class="dropdown"><a href="#"><span>Menu</span> <i
                                 class="bi bi-chevron-down toggle-dropdown"></i></a>
                         <ul>
-                            <li><a href="#">Dropdown 1</a></li>
-                            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                                        class="bi bi-chevron-down toggle-dropdown"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Dropdown 1</a></li>
-                                    <li><a href="#">Deep Dropdown 2</a></li>
-                                    <li><a href="#">Deep Dropdown 3</a></li>
-                                    <li><a href="#">Deep Dropdown 4</a></li>
-                                    <li><a href="#">Deep Dropdown 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Dropdown 2</a></li>
-                            <li><a href="#">Dropdown 3</a></li>
-                            <li><a href="#">Dropdown 4</a></li>
+                            <li><a href="#">Makanan</a></li>
+                            <li><a href="#">Resep</a></li>
                         </ul>
                     </li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">Tentang Kami</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-            <a class="btn-getstarted" href="#about">Get Started</a>
+            <div class="btn-auth">
+                <a class="btn-login" href="#about">Masuk</a>
+                <a class="btn-register" href="#about">Daftar</a>
+            </div>
 
         </div>
     </header>
+
+    <!-- Steps Section -->
+    <section id="steps" class="steps section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Steps</h2>
+            <div><span>How we</span> <span class="description-title">Work</span></div>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="steps-wrapper">
+
+                <div class="step-item" data-aos="fade-right" data-aos-delay="200">
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="bi bi-lightbulb"></i>
+                        </div>
+                        <div class="step-info">
+                            <span class="step-number">Step 01</span>
+                            <h3>Initial Consultation</h3>
+                            <p>Conducting thorough discovery sessions to understand your business requirements and
+                                objectives. Our expert team analyzes your needs to create a customized approach.</p>
+                        </div>
+                    </div>
+                </div><!-- End Step Item -->
+
+                <div class="step-item" data-aos="fade-left" data-aos-delay="300">
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="bi bi-gear"></i>
+                        </div>
+                        <div class="step-info">
+                            <span class="step-number">Step 02</span>
+                            <h3>Planning &amp; Strategy</h3>
+                            <p>Developing comprehensive strategies and detailed project plans based on the initial
+                                consultation. We create actionable roadmaps with clear milestones and deliverables.
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- End Step Item -->
+
+                <div class="step-item" data-aos="fade-right" data-aos-delay="400">
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="bi bi-bar-chart"></i>
+                        </div>
+                        <div class="step-info">
+                            <span class="step-number">Step 03</span>
+                            <h3>Development Phase</h3>
+                            <p>Executing the planned strategies with precision and agility. Our team implements
+                                solutions while maintaining constant communication and progress updates.</p>
+                        </div>
+                    </div>
+                </div><!-- End Step Item -->
+
+                <div class="step-item" data-aos="fade-left" data-aos-delay="500">
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="bi bi-check2-circle"></i>
+                        </div>
+                        <div class="step-info">
+                            <span class="step-number">Step 04</span>
+                            <h3>Launch &amp; Support</h3>
+                            <p>Ensuring smooth deployment and providing ongoing support for implemented solutions.
+                                We monitor performance and make necessary adjustments for optimal results.</p>
+                        </div>
+                    </div>
+                </div><!-- End Step Item -->
+
+            </div>
+
+        </div>
+
+    </section><!-- /Steps Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="advertise-1 d-flex flex-column flex-lg-row gap-4 align-items-center position-relative">
+
+                <div class="content-left flex-grow-1" data-aos="fade-right" data-aos-delay="200">
+                    <span class="badge text-uppercase mb-2">Don't Miss!</span>
+                    <h2>Revolutionize Your Digital Experience Today</h2>
+                    <p class="my-4">Strategia accelerates your business growth through innovative solutions and
+                        cutting-edge technology. Join thousands of satisfied customers who have transformed their
+                        operations.</p>
+
+                    <div class="features d-flex flex-wrap gap-3 mb-4">
+                        <div class="feature-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Premium Support</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Cloud Integration</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Real-time Analytics</span>
+                        </div>
+                    </div>
+
+                    <div class="cta-buttons d-flex flex-wrap gap-3">
+                        <a href="#" class="btn btn-primary">Start Free Trial</a>
+                        <a href="#" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="content-right position-relative" data-aos="fade-left" data-aos-delay="300">
+                    <img src="/assets/img/misc/misc-1.webp" alt="Digital Platform" class="img-fluid rounded-4">
+                    <div class="floating-card">
+                        <div class="card-icon">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                        <div class="card-content">
+                            <span class="stats-number">245%</span>
+                            <span class="stats-text">Growth Rate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="decoration">
+                    <div class="circle-1"></div>
+                    <div class="circle-2"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section><!-- /Call To Action Section -->
 
     <footer id="footer" class="footer">
 

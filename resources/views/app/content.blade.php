@@ -28,14 +28,6 @@
 
     <!-- Main CSS File -->
     <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
-
-    <!-- =======================================================
-  * Template Name: Strategy
-  * Template URL: https://bootstrapmade.com/strategy-bootstrap-agency-template/
-  * Updated: May 09 2025 with Bootstrap v5.3.6
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
@@ -53,38 +45,194 @@
             <nav id="navmenu" class="navmenu">
                 <ul>
                     <li><a href="#hero" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">Konten</a></li>
+                    <li><a href="#services">Kalkulator</a></li>
+                    <li><a href="#portfolio">Forum</a></li>
                     <li><a href="#team">Team</a></li>
-                    <li class="dropdown"><a href="#"><span>Dropdown</span> <i
+                    <li class="dropdown"><a href="#"><span>Menu</span> <i
                                 class="bi bi-chevron-down toggle-dropdown"></i></a>
                         <ul>
-                            <li><a href="#">Dropdown 1</a></li>
-                            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                                        class="bi bi-chevron-down toggle-dropdown"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Dropdown 1</a></li>
-                                    <li><a href="#">Deep Dropdown 2</a></li>
-                                    <li><a href="#">Deep Dropdown 3</a></li>
-                                    <li><a href="#">Deep Dropdown 4</a></li>
-                                    <li><a href="#">Deep Dropdown 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Dropdown 2</a></li>
-                            <li><a href="#">Dropdown 3</a></li>
-                            <li><a href="#">Dropdown 4</a></li>
+                            <li><a href="#">Makanan</a></li>
+                            <li><a href="#">Resep</a></li>
                         </ul>
                     </li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">Tentang Kami</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-            <a class="btn-getstarted" href="#about">Get Started</a>
+            <div class="btn-auth">
+                <a class="btn-login" href="#about">Masuk</a>
+                <a class="btn-register" href="#about">Daftar</a>
+            </div>
 
         </div>
     </header>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Services</h2>
+            <div><span>Check Our</span> <span class="description-title">Services</span></div>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="service-header">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-md-12">
+                        <div class="service-intro">
+                            <h2 class="service-heading">
+                                <div>Innovative business</div>
+                                <div><span>performance solutions</span></div>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="service-summary">
+                            <p>
+                                We integrate forward-thinking strategies, creative approaches, and state-of-the-art
+                                technologies to deliver exceptional customer experiences that drive growth and
+                                engage target markets.
+                            </p>
+                            <a href="services.html" class="service-btn">
+                                View All Services
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card position-relative z-1">
+                        <div class="service-icon">
+                            <i class="bi bi-palette"></i>
+                        </div>
+                        <a href="service-details.html"
+                            class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <h3>
+                            <a href="service-details.html">
+                                Creative <span>branding</span>
+                            </a>
+                        </h3>
+                        <p>
+                            Nulla facilisi. Maecenas eget magna neque. Suspendisse potenti. Curabitur eleifend nisi
+                            non magna vulputate, vel condimentum libero tempus. Proin consectetur feugiat diam.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card position-relative z-1">
+                        <div class="service-icon">
+                            <i class="bi bi-gem"></i>
+                        </div>
+                        <a href="service-details.html"
+                            class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <h3>
+                            <a href="service-details.html">
+                                Design <span>systems</span>
+                            </a>
+                        </h3>
+                        <p>
+                            Praesent euismod varius tellus, vel bibendum nunc interdum at. Donec vehicula diam vel
+                            metus venenatis convallis. Aliquam erat volutpat. Etiam viverra magna sit amet.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card position-relative z-1">
+                        <div class="service-icon">
+                            <i class="bi bi-megaphone"></i>
+                        </div>
+                        <a href="service-details.html"
+                            class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <h3>
+                            <a href="service-details.html">
+                                Marketing <span>strategies</span>
+                            </a>
+                        </h3>
+                        <p>
+                            Vivamus tempor velit id magna dictum, sed fermentum nisi faucibus. Integer nec pretium
+                            sapien. Fusce tincidunt ligula et purus consequat, ac pellentesque nulla eleifend.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card position-relative z-1">
+                        <div class="service-icon">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        <a href="service-details.html"
+                            class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <h3>
+                            <a href="service-details.html">
+                                Digital <span>platforms</span>
+                            </a>
+                        </h3>
+                        <p>
+                            Cras fermentum odio eu feugiat malesuada. Vestibulum ante ipsum primis in faucibus orci
+                            luctus et accumsan cursus. Morbi placerat nulla vel nunc viverra accumsan.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card position-relative z-1">
+                        <div class="service-icon">
+                            <i class="bi bi-graph-up"></i>
+                        </div>
+                        <a href="service-details.html"
+                            class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <h3>
+                            <a href="service-details.html">
+                                Growth <span>acceleration</span>
+                            </a>
+                        </h3>
+                        <p>
+                            Aenean vel augue vel nisi bibendum posuere. Phasellus in lacus quis urna sodales
+                            dignissim. Duis aliquam libero eget risus facilisis. Quisque eget libero vel nisl
+                            fringilla.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card position-relative z-1">
+                        <div class="service-icon">
+                            <i class="bi bi-camera-video"></i>
+                        </div>
+                        <a href="service-details.html"
+                            class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <h3>
+                            <a href="service-details.html">
+                                Media <span>solutions</span>
+                            </a>
+                        </h3>
+                        <p>
+                            Etiam efficitur lacus in diam finibus, nec ultrices est sagittis. Maecenas elementum
+                            magna sed risus faucibus, nec commodo purus facilisis. Vestibulum accumsan magna.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section><!-- /Services Section -->
 
     <footer id="footer" class="footer">
 
