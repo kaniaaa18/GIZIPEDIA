@@ -3,25 +3,29 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('app.home');
 });
 
-Route::get('/home', function ()  {
-    return view('app.home');
-})->name('home');
-
-Route::get('/about', function ()  {
+Route::get('/about', function () { 
     return view('app.about');
-})->name('about');
+});
 
-Route::get('/content', function ()  {
+Route::get('/content', function () {
     return view('app.content');
-})->name('content');
+});
 
-Route::get('/food', function ()  {
+Route::get('/food', function () {
     return view('app.food');
-})->name('food');
+});
 
-Route::get('/recipe', function ()  {
+Route::get('/forum', function () {
+    return view('app.forum');
+});
+
+Route::get('/recipe', function () {
     return view('app.recipe');
-})->name('recipe');
+});
+
+Route::get('/calculator', function () {
+    return view('app.calculator');
+});
