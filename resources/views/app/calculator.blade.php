@@ -90,7 +90,7 @@
         <div class="max-w-2xl mx-auto mt-10 bg-white p-6 rounded-2xl shadow-md border-2 border-gray-200">
             <h2 class="text-center text-xl font-bold text-red-700 mb-6 uppercase">Kalkulator Gizi Harian</h2>
 
-            <form method="POST" {{-- action="{{ route('kalkulator.hitung') }}" --}}>
+            <form method="POST" action="{{ route('kalkulator.hitung') }}">
                 @csrf
 
                 <!-- Jenis Kelamin -->
@@ -149,6 +149,30 @@
                     </button>
                 </div>
             </form>
+
+            <!-- Hasil Perhitungan -->
+            @isset($kalori)
+                <div class="max-w-2xl mx-auto mt-10 bg-white p-6 rounded-2xl shadow-md border-2 border-gray-200">
+                    <h2 class="text-center text-xl font-bold text-green-700 mb-6 uppercase">Hasil Perhitungan Gizi</h2>
+
+                    <div class="space-y-2">
+                        <p><strong>Total Kalori Harian:</strong> {{ round($kalori) }} kcal</p>
+                        <p><strong>Indeks Massa Tubuh (BMI):</strong> {{ round($bmi, 2) }} ({{ $kategoriBmi }})</p>
+                        <p><strong>Rekomendasi Asupan Harian:</strong></p>
+                        <ul class="list-disc list-inside pl-4">
+                            <li>Karbohidrat: {{ round($karbo) }} gram</li>
+                            <li>Protein: {{ round($protein) }} gram</li>
+                            <li>Lemak: {{ round($lemak) }} gram</li>
+                        </ul>
+                    </div>
+
+                    <div class="text-center mt-6">
+                        <a href="{{ route('kalkulator.index') }}" class="text-red-600 hover:underline">Kembali ke
+                            Kalkulator</a>
+                    </div>
+                </div>
+            @endisset
+
         </div>
 
         <div class="max-w-2xl mx-auto mt-10 bg-white p-6 rounded-2xl shadow-md border-2 border-gray-200">
@@ -165,9 +189,6 @@
                 </ul>
             </div>
 
-            <div class="text-center mt-6">
-                <a href="{{ route('kalkulator.index') }}" class="text-red-600 hover:underline">Kembali ke Kalkulator</a>
-            </div>
         </div>
 
     </div>

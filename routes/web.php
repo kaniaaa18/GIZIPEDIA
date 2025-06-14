@@ -12,9 +12,11 @@ Route::get('/', function () {
     return view('app.home');
 });
 
-Route::get('/about', function () {
+
+Route::get('/about', function () { 
     return view('app.about');
 });
+
 
 Route::get('/content', [ArticleController::class, 'index'])->name('app.content');
 Route::get('/content/{article:slug}', [ArticleController::class, 'show'])->name('app.content-article');
@@ -30,6 +32,19 @@ Route::post('/forum', [ForumController::class, 'store'])->name('forum.store');
 
 Route::get('/recipe', [RecipeController::class, 'index']);
 Route::get('/recipe/{slug}', [RecipeController::class, 'show']);
+Route::get('/content', function () {
+    return view('app.content');
+});
+
+
+Route::get('/food', function () {
+    return view('app.food');
+});
+
+Route::get('/forum', function () {
+    return view('app.forum');
+});
+
 
 Route::get('/calculator', [CalculatorController::class, 'index'])->name('kalkulator.index');
 Route::post('/calculator', [CalculatorController::class, 'hitung'])->name('kalkulator.hitung');
