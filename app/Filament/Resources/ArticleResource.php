@@ -7,7 +7,10 @@ use Filament\Tables;
 use App\Models\Article;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
+use Illuminate\Support\Str;
 use Filament\Resources\Resource;
+use function Laravel\Prompts\search;
+use Filament\Forms\Components\Hidden;
 use Filament\Forms\Components\Textarea;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
@@ -17,7 +20,6 @@ use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\ArticleResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\ArticleResource\RelationManagers;
-use function Laravel\Prompts\search;
 
 class ArticleResource extends Resource
 {
@@ -29,10 +31,21 @@ class ArticleResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('title')->required(),
-                Textarea::make('content')->required(),
+                TextInput::make('title')
+                    ->required()
+                    ->live(onBlur: true)
+                    ->afterStateUpdated(function ($state, callable $set) {
+                        $set('slug', Str::slug($state));
+                    }),
+                Hidden::make('slug'),
+                FileUpload::make('content')
+                    ->label('File PDF')
+                    ->directory('articles')
+                    ->disk('public')
+                    ->acceptedFileTypes(['application/pdf'])
+                    ->required(),
                 TextInput::make('author')->required(),
-                FileUpload::make('image')->required(),
+                FileUpload::make('image')
             ]);
     }
 
@@ -46,7 +59,7 @@ class ArticleResource extends Resource
                     ->searchable(),
                 TextColumn::make('author')
                     ->searchable(),
-                ImageColumn::make('avatar')
+                ImageColumn::make('image')
                     ->square()
             ])
             ->filters([
@@ -61,6 +74,22 @@ class ArticleResource extends Resource
                 ]),
             ]);
     }
+
+    public static function mutateFormDataBeforeCreate(array $data): array
+    {
+        $originalSlug = Str::slug($data['title']);
+        $slug = $originalSlug;
+        $counter = 1;
+
+        while (Article::where('slug', $slug)->exists()) {
+            $slug = $originalSlug . '-' . $counter++;
+        }
+
+        $data['slug'] = $slug;
+
+        return $data;
+    }
+
 
     public static function getRelations(): array
     {

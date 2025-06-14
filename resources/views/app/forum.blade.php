@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Index - Strategy Bootstrap Template</title>
+    <title>GIZIPEDIA</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -63,18 +63,18 @@
                 <div class="btn-auth">
                     @auth
                         <a href="{{ url('/dashboard') }}"
-                            class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] border-[#19140035] hover:border-[#1915014a] border text-[#1b1b18] dark:border-[#3E3E3A] dark:hover:border-[#62605b] rounded-sm text-sm leading-normal">
+                            class="inline-block px-5 py-1.5 border-[#19140035] hover:border-[#1915014a] border text-[#1b1b18] rounded-sm text-sm leading-normal">
                             Dashboard
                         </a>
                     @else
                         <a class="btn-login" href="{{ route('login') }}"
-                            class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] text-[#1b1b18] border border-transparent hover:border-[#19140035] dark:hover:border-[#3E3E3A] rounded-sm text-sm leading-normal">
+                            class="inline-block px-5 py-1.5 text-[#1b1b18] border border-transparent hover:border-[#19140035] rounded-sm text-sm leading-normal">
                             Log in
                         </a>
 
                         @if (Route::has('register'))
                             <a class="btn-register" href="{{ route('register') }}"
-                                class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] border-[#19140035] hover:border-[#1915014a] border text-[#1b1b18] dark:border-[#3E3E3A] dark:hover:border-[#62605b] rounded-sm text-sm leading-normal">
+                                class="inline-block px-5 py-1.5 border-[#19140035] hover:border-[#1915014a] border text-[#1b1b18] rounded-sm text-sm leading-normal">
                                 Register
                             </a>
                         @endif
@@ -84,6 +84,84 @@
 
         </div>
     </header>
+
+    <div class="flex flex-col md:flex-row gap-6 p-6 min-h-screen">
+
+        {{-- Daftar Pertanyaan --}}
+        <div class="w-full md:w-2/3 space-y-6">
+            @foreach ($questions as $question)
+                <div class="flex border-[3px] border-[#ECECEC] rounded-[5px] bg-white p-4 items-start gap-4">
+                    {{-- Avatar --}}
+                    <div class="w-[80px]">
+                        <img src="https://via.placeholder.com/60" alt="Avatar" class="rounded-full">
+                    </div>
+
+                    {{-- Konten Pertanyaan --}}
+                    <div class="flex-1">
+                        <p class="font-black text-[18px] leading-[16px]">
+                            {{ $question->is_anonim ? 'ANONIM' : ($question->name ?? 'ANONIM') }}
+                        </p>
+                        <p class="text-[14px] mt-2 leading-[20px]">
+                            {{ $question->question }}
+                        </p>
+
+                        <div class="flex items-center justify-between mt-4 text-xs text-gray-500">
+                            <span>{{ $question->created_at->format('H:i, d/m/Y') }}</span>
+                            <div class="flex items-center gap-6">
+                                <span>1 Jawaban</span>
+                                <span>○ Suka</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+
+        {{-- Form Tambah Pertanyaan --}}
+        <div class="w-full md:w-1/3 bg-white border border-[#ECECEC] rounded-[5px] p-4 h-fit">
+            <h3 class="font-black text-[16px] mb-4">Berbagi Masalah Gizimu!</h3>
+
+            @if (session('success'))
+                <div class="bg-green-100 text-green-800 p-2 rounded mb-3 text-sm">
+                    {{ session('success') }}
+                </div>
+            @endif
+
+            <form method="POST" action="{{ route('forum.store') }}">
+                @csrf
+
+                {{-- Anonim --}}
+                <div class="flex items-center mb-3">
+                    <input type="checkbox" name="is_anonim" value="1" id="anonim" class="mr-2">
+                    <label for="anonim" class="text-sm">Centang untuk menjadi anonim</label>
+                </div>
+
+                {{-- Nama --}}
+                <div class="mb-3">
+                    <label for="name" class="text-sm">Nama</label>
+                    <input type="text" name="name" id="name"
+                        class="w-full border border-[#C4C4C4] rounded-sm px-2 py-1 text-sm focus:outline-none focus:ring focus:ring-red-200">
+                </div>
+
+                {{-- Pertanyaan --}}
+                <div class="mb-4">
+                    <label for="question" class="text-sm">Pertanyaan</label>
+                    <textarea name="question" id="question" rows="5"
+                        class="w-full border border-[#C4C4C4] rounded-sm px-2 py-1 text-sm focus:outline-none focus:ring focus:ring-red-200"
+                        required></textarea>
+                </div>
+
+                {{-- Tombol Kirim --}}
+                <div class="text-right">
+                    <button type="submit"
+                        class="bg-[#A63A26] hover:bg-[#8d2f1e] text-white font-bold text-xs px-6 py-2 rounded-full transition-all">
+                        KIRIM
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </div>
 
     <footer id="footer" class="footer">
 
