@@ -85,140 +85,28 @@
         </div>
     </header>
 
-    <!-- Steps Section -->
-    <section id="steps" class="steps section">
+    <section class="hero-image">
+        <img src="assets/img/image.png" alt="Hero Image" class="img-fluid">
+    </section>
 
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Steps</h2>
-            <div><span>How we</span> <span class="description-title">Work</span></div>
-        </div><!-- End Section Title -->
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="steps-wrapper">
-
-                <div class="step-item" data-aos="fade-right" data-aos-delay="200">
-                    <div class="step-content">
-                        <div class="step-icon">
-                            <i class="bi bi-lightbulb"></i>
-                        </div>
-                        <div class="step-info">
-                            <span class="step-number">Step 01</span>
-                            <h3>Initial Consultation</h3>
-                            <p>Conducting thorough discovery sessions to understand your business requirements and
-                                objectives. Our expert team analyzes your needs to create a customized approach.</p>
-                        </div>
-                    </div>
-                </div><!-- End Step Item -->
-
-                <div class="step-item" data-aos="fade-left" data-aos-delay="300">
-                    <div class="step-content">
-                        <div class="step-icon">
-                            <i class="bi bi-gear"></i>
-                        </div>
-                        <div class="step-info">
-                            <span class="step-number">Step 02</span>
-                            <h3>Planning &amp; Strategy</h3>
-                            <p>Developing comprehensive strategies and detailed project plans based on the initial
-                                consultation. We create actionable roadmaps with clear milestones and deliverables.
-                            </p>
-                        </div>
-                    </div>
-                </div><!-- End Step Item -->
-
-                <div class="step-item" data-aos="fade-right" data-aos-delay="400">
-                    <div class="step-content">
-                        <div class="step-icon">
-                            <i class="bi bi-bar-chart"></i>
-                        </div>
-                        <div class="step-info">
-                            <span class="step-number">Step 03</span>
-                            <h3>Development Phase</h3>
-                            <p>Executing the planned strategies with precision and agility. Our team implements
-                                solutions while maintaining constant communication and progress updates.</p>
-                        </div>
-                    </div>
-                </div><!-- End Step Item -->
-
-                <div class="step-item" data-aos="fade-left" data-aos-delay="500">
-                    <div class="step-content">
-                        <div class="step-icon">
-                            <i class="bi bi-check2-circle"></i>
-                        </div>
-                        <div class="step-info">
-                            <span class="step-number">Step 04</span>
-                            <h3>Launch &amp; Support</h3>
-                            <p>Ensuring smooth deployment and providing ongoing support for implemented solutions.
-                                We monitor performance and make necessary adjustments for optimal results.</p>
-                        </div>
-                    </div>
-                </div><!-- End Step Item -->
-
+    <!-- Offering Section -->
+    <section id="offering" class="offering-section">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-5 offering-item">
+                    <h3 class="offering-title">APA YANG KAMI TAWARKAN?</h3>
+                    <p>Materi Edukasi Visual, Kalkulator Gizi Harian, Menu Sehat, Kuis Gizi & Forum Komunitas.</p>
+                </div>
+                <div class="col-md-5 offering-item">
+                    <h3 class="offering-title">MENGAPA GIZIPEDIA?</h3>
+                    <p>Karena kami percaya bahwa akses terhadap informasi gizi yang baik adalah hak semua orang. Dengan
+                        pendekatan yang inklusif dan teknologi yang mudah diakses, GIZIPEDIA ingin membantu masyarakat
+                        Indonesia hidup lebih sehat mulai dari hal sederhana, yaitu makanan yang dikonsumsi setiap hari.
+                    </p>
+                </div>
             </div>
-
         </div>
-
-    </section><!-- /Steps Section -->
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section">
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="advertise-1 d-flex flex-column flex-lg-row gap-4 align-items-center position-relative">
-
-                <div class="content-left flex-grow-1" data-aos="fade-right" data-aos-delay="200">
-                    <span class="badge text-uppercase mb-2">Don't Miss!</span>
-                    <h2>Revolutionize Your Digital Experience Today</h2>
-                    <p class="my-4">Strategia accelerates your business growth through innovative solutions and
-                        cutting-edge technology. Join thousands of satisfied customers who have transformed their
-                        operations.</p>
-
-                    <div class="features d-flex flex-wrap gap-3 mb-4">
-                        <div class="feature-item">
-                            <i class="bi bi-check-circle-fill"></i>
-                            <span>Premium Support</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="bi bi-check-circle-fill"></i>
-                            <span>Cloud Integration</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="bi bi-check-circle-fill"></i>
-                            <span>Real-time Analytics</span>
-                        </div>
-                    </div>
-
-                    <div class="cta-buttons d-flex flex-wrap gap-3">
-                        <a href="#" class="btn btn-primary">Start Free Trial</a>
-                        <a href="#" class="btn btn-outline">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="content-right position-relative" data-aos="fade-left" data-aos-delay="300">
-                    <img src="/assets/img/misc/misc-1.webp" alt="Digital Platform" class="img-fluid rounded-4">
-                    <div class="floating-card">
-                        <div class="card-icon">
-                            <i class="bi bi-graph-up-arrow"></i>
-                        </div>
-                        <div class="card-content">
-                            <span class="stats-number">245%</span>
-                            <span class="stats-text">Growth Rate</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="decoration">
-                    <div class="circle-1"></div>
-                    <div class="circle-2"></div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section><!-- /Call To Action Section -->
+    </section>
 
     <footer id="footer" class="footer">
 

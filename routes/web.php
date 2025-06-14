@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\CalculatorController;
 
 Route::get('/', function ()  {
     return view('app.home');
@@ -11,17 +12,25 @@ Route::get('/home', function () {
     return view('app.home');
 });
 
-Route::get('/about', function () {
+
+Route::get('/about', function () { 
     return view('app.about');
 });
+
 
 Route::get('/content', function () {
     return view('app.content');
 });
 
+
 Route::get('/food', function () {
     return view('app.food');
 });
+
+Route::get('/forum', function () {
+    return view('app.forum');
+});
+
 
 Route::get('/forum', function () {
     return view('app.forum');
@@ -45,4 +54,13 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+
+
 require __DIR__.'/auth.php';
+
+Route::get('/calculator', function () {
+    return view('app.calculator');
+});
+
+Route::get('/calculator', [CalculatorController::class, 'index'])->name('kalkulator.index');
+Route::post('/calculator', [CalculatorController::class, 'hitung'])->name('kalkulator.hitung');

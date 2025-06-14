@@ -737,12 +737,14 @@ section,
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
-  padding-bottom: 60px;
-  position: relative;
+    padding-top: 80px; 
+    padding-bottom: 50px;
+    position: relative;
+    text-align: center; 
 }
 
 .section-title h2 {
-  font-size: 14px;
+  font-size: 30px;
   font-weight: 500;
   padding: 0;
   line-height: 1px;
@@ -770,6 +772,41 @@ section,
   font-weight: 700;
   text-transform: uppercase;
   font-family: var(--heading-font);
+}
+
+/*--------------------------------------------------------------
+# Offering Section
+--------------------------------------------------------------*/
+.hero-image {
+    margin-top: 120px; /* beri ruang agar tidak tertutup navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.offering-section {
+    padding: 20px 20px;
+    background-color: #fff;
+}
+
+.offering-item {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.offering-title {
+    color: #c4421a;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 /*--------------------------------------------------------------
