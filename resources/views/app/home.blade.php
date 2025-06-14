@@ -140,62 +140,88 @@
 
         <!-- About Section -->
         <section id="about" class="about section">
-
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>About</h2>
-                <div><span>Learn More</span> <span class="description-title">About Us</span></div>
+                <h2>Tentang Kami</h2>
+                <div><span>Selengkapnya</span></div>
             </div><!-- End Section Title -->
 
             <div class="container">
 
                 <div class="row gx-5 align-items-center">
+                    <h2>Kenali Gizi, Wujudkan Hidup Sehat Bersama GIZIPEDIA</h2>
+                    <p class="lead">GIZIPEDIA hadir sebagai platform edukasi yang membantu kamu memahami gizi dengan cara yang mudah, menyenangkan, dan bermanfaat.</p>
                     <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
                         <div class="about-image position-relative">
-                            <img src="/assets/img/about/about-portrait-1.webp" class="img-fluid rounded-4 shadow-sm"
+                            <img src="/assets/img/about/about-home.png" class="img-fluid rounded-4 shadow-sm"
                                 alt="About Image" loading="lazy">
-                            <div class="experience-badge">
-                                <span class="years">20+</span>
-                                <span class="text">Years of Expertise</span>
-                            </div>
                         </div>
                     </div>
 
                     <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left" data-aos-delay="300">
-                        <div class="about-content">
-                            <h2>Elevating Business Performance Through Innovation</h2>
-                            <p class="lead">We focus on crafting bespoke strategies that navigate complexity and deliver
-                                tangible results for our clients.</p>
-                            <p>Through a blend of sophisticated analytics and creative problem-solving, we empower
-                                organizations to thrive in rapidly evolving markets.</p>
+                    <div class="about-content">
+                        <div class="row g-4 mt-3">
 
-                            <div class="row g-4 mt-3">
-                                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="400">
-                                    <div class="feature-item">
-                                        <h5>Fitur Utama</h5>
-                                        <p>Baca Konten Gizi yang Menarik <br>
-                                        Materi visual, infografis, dan tips sehat yang mudah dipahami untuk semua usia. <br><br>
-                                        Gunakan Kalkulator Gizi Harian <br>
-                                        Hitung kebutuhan kalori dan nutrisi sesuai usia, aktivitas, dan tujuanmu. <br><br>
-                                        Gabung Komunitas Gizi <br>
-                                        Diskusi, tanya jawab, dan berbagi pengalaman di forum yang suportif. <br><br>
-                                        Dapatkan Menu & Resep Sehat <br>
-                                        Rekomendasi menu harian, lengkap dengan nilai gizi dan bahan lokal.<br><br>
-                                    </div>
-                                </div>
-                                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="450">
-                                    <div class="feature-item">
-                                        <i class="bi bi-lightbulb-fill"></i>
-                                        <h5>Forward-Thinking Approach</h5>
-                                        <p>We embrace innovative methodologies to develop unique strategies that drive
-                                            lasting success.</p>
-                                    </div>
-                                </div>
+                        <!-- Fitur GIZIPEDIA -->
+                        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="feature-item shadow-sm rounded-4 p-4 bg-light h-100">
+                            <h5 class="fw-bold text-danger mb-3">
+                                <i class="bi bi-heart-pulse-fill me-2"></i>
+                                Manfaat Utama GIZIPEDIA
+                            </h5>
+                            <ul class="list-unstyled mb-0">
+                                <li class="d-flex align-items-start mb-3">
+                                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                <span><strong>Kalkulator Gizi Personal:</strong> Bantu atur kebutuhan gizi harian sesuai profilmu.</span>
+                                </li>
+                                <li class="d-flex align-items-start mb-3">
+                                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                <span><strong>Konten Edukatif Interaktif:</strong> Materi visual yang mudah dimengerti & seru dipelajari.</span>
+                                </li>
+                                <li class="d-flex align-items-start mb-3">
+                                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                <span><strong>Forum Komunitas:</strong> Bertanya & berdiskusi langsung dengan ahli dan sesama pengguna.</span>
+                                </li>
+                                <li class="d-flex align-items-start">
+                                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                <span><strong>Resep Sehat Harian:</strong> Inspirasi makanan lezat, bergizi, dan praktis setiap hari.</span>
+                                </li>
+                            </ul>
                             </div>
-
-                            <a href="#" class="btn btn-primary mt-4">Explore Our Services</a>
                         </div>
+
+                        <!-- Inovasi Gizi -->
+                        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="450">
+                            <div class="feature-item shadow-sm rounded-4 p-4 bg-light h-100">
+                            <h5 class="fw-bold text-danger mb-3">
+                                <i class="bi bi-lightbulb-fill me-2"></i>
+                                Pendekatan Inovatif Kami
+                            </h5>
+                            <ul class="list-unstyled">
+                            <li class="d-flex align-items-start mb-2">
+                                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                <span><strong>Personalisasi:</strong> Materi dan fitur disesuaikan dengan usia, aktivitas, dan tujuan kesehatan Anda.</span>
+                            </li>
+                            <li class="d-flex align-items-start mb-2">
+                                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                <span><strong>Visual Interaktif:</strong> Gunakan infografik dan ilustrasi menarik agar lebih mudah dipahami.</span>
+                            </li>
+                            <li class="d-flex align-items-start">
+                                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                <span><strong>Kolaborasi Ahli:</strong> Semua konten telah dikurasi oleh pakar gizi dan kesehatan terpercaya.</span>
+                            </li>
+                            </ul>
+                            </div>
+                        </div>
+
+                        </div>
+                        <a href="/tentang-kami" class="btn btn-outline-danger mt-4 px-4 py-2 fw-semibold rounded-pill">
+                        <i class="bi bi-arrow-right-circle me-2"></i> Kenali Lebih Lanjut
+                        </a>
                     </div>
+                    </div>
+
+
                 </div>
 
                 <div class="testimonial-section mt-5 pt-5" data-aos="fade-up" data-aos-delay="100">
@@ -299,170 +325,49 @@
 
         </section><!-- /About Section -->
 
-        <!-- Services Section -->
-        <section id="services" class="services section">
+    <!-- Services Section -->
+    <section id="services" class="services section">
 
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Services</h2>
-                <div><span>Check Our</span> <span class="description-title">Services</span></div>
-            </div><!-- End Section Title -->
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Konten</h2>
+            <div><span>Artikel</span></div>
+        </div><!-- End Section Title -->
 
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="service-header">
-                    <div class="row align-items-center">
-                        <div class="col-lg-8 col-md-12">
-                            <div class="service-intro">
-                                <h2 class="service-heading">
-                                    <div>Innovative business</div>
-                                    <div><span>performance solutions</span></div>
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-12">
-                            <div class="service-summary">
-                                <p>
-                                    We integrate forward-thinking strategies, creative approaches, and state-of-the-art
-                                    technologies to deliver exceptional customer experiences that drive growth and
-                                    engage target markets.
-                                </p>
-                                <a href="services.html" class="service-btn">
-                                    View All Services
-                                    <i class="bi bi-arrow-right"></i>
-                                </a>
-                            </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-header">
+                <div class="row align-items-center">
+                    
+                    <!-- Kiri -->
+                    <div class="col-lg-8 col-md-12">
+                        <div class="service-intro">
+                            <h2 class="service-heading">
+                                <div>Temukan informasi</div>
+                                <div><span>bergizi dan inspiratif</span></div>
+                            </h2>
+                            <p class="mt-3">
+                                Mulai hari dengan pengetahuan yang sehat dan bermanfaat.
+                                Jelajahi artikel-artikel terbaru seputar gizi, kesehatan, dan gaya hidup seimbang hanya di GIZIPEDIA.
+                            </p>
                         </div>
                     </div>
+
+                    <!-- Kanan -->
+                    <div class="col-lg-4 col-md-12">
+                        <div class="service-summary text-lg-end mt-4 mt-lg-0">
+                            <a href="services.html" class="service-btn">
+                                Lihat Semua Artikel
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="service-card position-relative z-1">
-                            <div class="service-icon">
-                                <i class="bi bi-palette"></i>
-                            </div>
-                            <a href="service-details.html"
-                                class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                                <i class="bi bi-arrow-up-right"></i>
-                            </a>
-                            <h3>
-                                <a href="service-details.html">
-                                    Creative <span>branding</span>
-                                </a>
-                            </h3>
-                            <p>
-                                Nulla facilisi. Maecenas eget magna neque. Suspendisse potenti. Curabitur eleifend nisi
-                                non magna vulputate, vel condimentum libero tempus. Proin consectetur feugiat diam.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-card position-relative z-1">
-                            <div class="service-icon">
-                                <i class="bi bi-gem"></i>
-                            </div>
-                            <a href="service-details.html"
-                                class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                                <i class="bi bi-arrow-up-right"></i>
-                            </a>
-                            <h3>
-                                <a href="service-details.html">
-                                    Design <span>systems</span>
-                                </a>
-                            </h3>
-                            <p>
-                                Praesent euismod varius tellus, vel bibendum nunc interdum at. Donec vehicula diam vel
-                                metus venenatis convallis. Aliquam erat volutpat. Etiam viverra magna sit amet.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service-card position-relative z-1">
-                            <div class="service-icon">
-                                <i class="bi bi-megaphone"></i>
-                            </div>
-                            <a href="service-details.html"
-                                class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                                <i class="bi bi-arrow-up-right"></i>
-                            </a>
-                            <h3>
-                                <a href="service-details.html">
-                                    Marketing <span>strategies</span>
-                                </a>
-                            </h3>
-                            <p>
-                                Vivamus tempor velit id magna dictum, sed fermentum nisi faucibus. Integer nec pretium
-                                sapien. Fusce tincidunt ligula et purus consequat, ac pellentesque nulla eleifend.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="service-card position-relative z-1">
-                            <div class="service-icon">
-                                <i class="bi bi-code-slash"></i>
-                            </div>
-                            <a href="service-details.html"
-                                class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                                <i class="bi bi-arrow-up-right"></i>
-                            </a>
-                            <h3>
-                                <a href="service-details.html">
-                                    Digital <span>platforms</span>
-                                </a>
-                            </h3>
-                            <p>
-                                Cras fermentum odio eu feugiat malesuada. Vestibulum ante ipsum primis in faucibus orci
-                                luctus et accumsan cursus. Morbi placerat nulla vel nunc viverra accumsan.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-card position-relative z-1">
-                            <div class="service-icon">
-                                <i class="bi bi-graph-up"></i>
-                            </div>
-                            <a href="service-details.html"
-                                class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                                <i class="bi bi-arrow-up-right"></i>
-                            </a>
-                            <h3>
-                                <a href="service-details.html">
-                                    Growth <span>acceleration</span>
-                                </a>
-                            </h3>
-                            <p>
-                                Aenean vel augue vel nisi bibendum posuere. Phasellus in lacus quis urna sodales
-                                dignissim. Duis aliquam libero eget risus facilisis. Quisque eget libero vel nisl
-                                fringilla.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service-card position-relative z-1">
-                            <div class="service-icon">
-                                <i class="bi bi-camera-video"></i>
-                            </div>
-                            <a href="service-details.html"
-                                class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                                <i class="bi bi-arrow-up-right"></i>
-                            </a>
-                            <h3>
-                                <a href="service-details.html">
-                                    Media <span>solutions</span>
-                                </a>
-                            </h3>
-                            <p>
-                                Etiam efficitur lacus in diam finibus, nec ultrices est sagittis. Maecenas elementum
-                                magna sed risus faucibus, nec commodo purus facilisis. Vestibulum accumsan magna.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
+        </div>
 
-        </section><!-- /Services Section -->
+    </section><!-- /Services Section -->
+
 
  
     </main>
