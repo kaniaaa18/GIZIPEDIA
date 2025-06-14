@@ -132,7 +132,7 @@
                                                 data-glightbox="title: Daging; description: Daging merah seperti sapi dan kambing merupakan sumber protein hewani yang kaya zat besi, seng, dan vitamin B12. Konsumsi dalam jumlah seimbang membantu pembentukan otot dan mendukung kesehatan darah.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
-                                            <a href="portfolio-details.html">
+                                            <a href="details.html">
                                                 <i class="bi bi-arrow-right"></i>
                                             </a>
                                         </div>
@@ -156,7 +156,7 @@
                                                 data-glightbox="title: Daging Ayam; description: Daging ayam merupakan sumber protein rendah lemak, terutama bagian dada tanpa kulit. Kaya akan niasin dan selenium, ayam bermanfaat untuk metabolisme tubuh dan sistem kekebalan.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
-                                            <a href="portfolio-details.html">
+                                            <a href="details.html">
                                                 <i class="bi bi-arrow-right"></i>
                                             </a>
                                         </div>
@@ -180,7 +180,7 @@
                                                 data-glightbox="title: Ikan; description: Ikan merupakan sumber protein tinggi dan kaya lemak sehat seperti omega-3, terutama pada ikan laut seperti salmon dan tuna. Omega-3 berperan penting dalam kesehatan jantung dan otak.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
-                                            <a href="portfolio-details.html">
+                                            <a href="details.html">
                                                 <i class="bi bi-arrow-right"></i>
                                             </a>
                                         </div>
@@ -205,7 +205,7 @@
                                                 data-glightbox="title: Susu dan Keju; description: Produk susu dan keju mengandung kalsium, protein, dan vitamin D yang penting untuk kesehatan tulang dan gigi. Pilih varian rendah lemak untuk konsumsi harian yang lebih sehat.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
-                                            <a href="portfolio-details.html">
+                                            <a href="details.html">
                                                 <i class="bi bi-arrow-right"></i>
                                             </a>
                                         </div>
@@ -229,7 +229,7 @@
                                                 data-glightbox="title: Buah-buahan; description: Buah-buahan adalah sumber alami vitamin, terutama vitamin C dan A, serta serat dan air. Mereka membantu hidrasi tubuh, melancarkan pencernaan, dan melindungi sel dari kerusakan oksidatif.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
-                                            <a href="portfolio-details.html">
+                                            <a href="details.html">
                                                 <i class="bi bi-arrow-right"></i>
                                             </a>
                                         </div>
@@ -253,7 +253,7 @@
                                                 data-glightbox="title: Sayuran; description: Sayuran mengandung serat, vitamin, mineral, dan antioksidan yang penting untuk pencernaan dan daya tahan tubuh. Konsumsi beragam sayuran setiap hari membantu menjaga kesehatan jangka panjang.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
-                                            <a href="portfolio-details.html">
+                                            <a href="details.html">
                                                 <i class="bi bi-arrow-right"></i>
                                             </a>
                                         </div>
@@ -277,7 +277,7 @@
                                                 data-glightbox="title: Biji-bijian; description: Biji-bijian utuh seperti beras merah, quinoa, dan gandum merupakan sumber karbohidrat kompleks, serat, vitamin B, dan mineral. Mereka membantu menjaga energi dan kestabilan kadar gula darah.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
-                                            <a href="portfolio-details.html">
+                                            <a href="details.html">
                                                 <i class="bi bi-arrow-right"></i>
                                             </a>
                                         </div>
@@ -301,7 +301,7 @@
                                                 data-glightbox="title: Umbi-umbian; description: Umbi-umbian seperti kentang, ubi, dan singkong kaya akan karbohidrat kompleks, serat, serta vitamin dan mineral seperti vitamin C dan kalium. Mereka baik untuk sumber energi alami.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
-                                            <a href="portfolio-details.html">
+                                            <a href="details.html">
                                                 <i class="bi bi-arrow-right"></i>
                                             </a>
                                         </div>
@@ -319,60 +319,6 @@
 
     </section><!-- /Portfolio Section -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Contact</h2>
-            <div><span>Let's</span> <span class="description-title">Connect</span></div>
-        </div><!-- End Section Title -->
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-            <!-- Contact Info Boxes -->
-            <div class="row gy-4 mb-5">
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="contact-info-box">
-                        <div class="icon-box">
-                            <i class="bi bi-geo-alt"></i>
-                        </div>
-                        <div class="info-content">
-                            <h4>Our Address</h4>
-                            <p>1842 Maple Avenue, Portland, Oregon 97204</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="contact-info-box">
-                        <div class="icon-box">
-                            <i class="bi bi-envelope"></i>
-                        </div>
-                        <div class="info-content">
-                            <h4>Email Address</h4>
-                            <p>info@example.com</p>
-                            <p>contact@example.com</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="contact-info-box">
-                        <div class="icon-box">
-                            <i class="bi bi-headset"></i>
-                        </div>
-                        <div class="info-content">
-                            <h4>Hours of Operation</h4>
-                            <p>Sunday-Fri: 9 AM - 6 PM</p>
-                            <p>Saturday: 9 AM - 4 PM</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section><!-- /Contact Section -->
 
     <footer id="footer" class="footer">
 

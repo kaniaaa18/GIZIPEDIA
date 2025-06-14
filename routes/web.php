@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\CalculatorController;
 
 Route::get('/', function ()  {
     return view('app.home');
@@ -60,3 +61,6 @@ require __DIR__.'/auth.php';
 Route::get('/calculator', function () {
     return view('app.calculator');
 });
+
+Route::get('/calculator', [CalculatorController::class, 'index'])->name('kalkulator.index');
+Route::post('/calculator', [CalculatorController::class, 'hitung'])->name('kalkulator.hitung');

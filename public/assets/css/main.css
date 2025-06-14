@@ -775,6 +775,41 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Offering Section
+--------------------------------------------------------------*/
+.hero-image {
+    margin-top: 120px; /* beri ruang agar tidak tertutup navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.offering-section {
+    padding: 20px 20px;
+    background-color: #fff;
+}
+
+.offering-item {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.offering-title {
+    color: #c4421a;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
