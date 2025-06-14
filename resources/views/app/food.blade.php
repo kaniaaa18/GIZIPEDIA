@@ -90,15 +90,15 @@
 
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-            <h2>Portfolio</h2>
-            <div><span>Check Our</span> <span class="description-title">Portfolio</span></div>
-        </div><!-- End Section Title -->
+            <div><span>Kategori Makanan</span></div>
+        </div>
+        <!-- End Section Title -->
 
         <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
 
             <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-                <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+                <!-- <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
                     <li data-filter="*" class="filter-active">
                         <i class="bi bi-grid-3x3"></i> All Projects
                     </li>
@@ -114,23 +114,22 @@
                     <li data-filter=".filter-marketing">
                         <i class="bi bi-graph-up"></i> Marketing
                     </li>
-                </ul>
+                </ul> -->
 
                 <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
 
                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
                         <article class="portfolio-entry">
                             <figure class="entry-image">
-                                <img src="/assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt=""
+                                <img src="/assets/img/raw-beef-meat.jpg" class="img-fluid" alt=""
                                     loading="lazy">
                                 <div class="entry-overlay">
                                     <div class="overlay-content">
-                                        <div class="entry-meta">UI/UX Design</div>
-                                        <h3 class="entry-title">Mobile Banking App</h3>
+                                        <h3 class="entry-title">Daging</h3>
                                         <div class="entry-links">
-                                            <a href="/assets/img/portfolio/portfolio-1.webp" class="glightbox"
+                                            <a href="/assets/img/raw-beef-meat.jpg" class="glightbox"
                                                 data-gallery="portfolio-gallery-ui"
-                                                data-glightbox="title: Mobile Banking App; description: Praesent commodo cursus magna, vel scelerisque nisl consectetur.">
+                                                data-glightbox="title: Daging; description: Daging merah seperti sapi dan kambing merupakan sumber protein hewani yang kaya zat besi, seng, dan vitamin B12. Konsumsi dalam jumlah seimbang membantu pembentukan otot dan mendukung kesehatan darah.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
                                             <a href="portfolio-details.html">
@@ -146,16 +145,15 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
                         <article class="portfolio-entry">
                             <figure class="entry-image">
-                                <img src="/assets/img/portfolio/portfolio-10.webp" class="img-fluid" alt=""
+                                <img src="/assets/img/raw-chicken.jpg" class="img-fluid" alt=""
                                     loading="lazy">
                                 <div class="entry-overlay">
                                     <div class="overlay-content">
-                                        <div class="entry-meta">Development</div>
-                                        <h3 class="entry-title">E-Learning Platform</h3>
+                                        <h3 class="entry-title">Daging Ayam</h3>
                                         <div class="entry-links">
-                                            <a href="/assets/img/portfolio/portfolio-10.webp" class="glightbox"
+                                            <a href="/assets/img/raw-chicken.jpg" class="glightbox"
                                                 data-gallery="portfolio-gallery-development"
-                                                data-glightbox="title: E-Learning Platform; description: Nulla vitae elit libero, a pharetra augue mollis interdum.">
+                                                data-glightbox="title: Daging Ayam; description: Daging ayam merupakan sumber protein rendah lemak, terutama bagian dada tanpa kulit. Kaya akan niasin dan selenium, ayam bermanfaat untuk metabolisme tubuh dan sistem kekebalan.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
                                             <a href="portfolio-details.html">
@@ -171,16 +169,15 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
                         <article class="portfolio-entry">
                             <figure class="entry-image">
-                                <img src="/assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt=""
+                                <img src="/assets/img/fish.jpg" class="img-fluid" alt=""
                                     loading="lazy">
                                 <div class="entry-overlay">
                                     <div class="overlay-content">
-                                        <div class="entry-meta">Photography</div>
-                                        <h3 class="entry-title">Urban Architecture</h3>
+                                        <h3 class="entry-title">Ikan</h3>
                                         <div class="entry-links">
-                                            <a href="/assets/img/portfolio/portfolio-7.webp" class="glightbox"
+                                            <a href="/assets/img/fish.jpg" class="glightbox"
                                                 data-gallery="portfolio-gallery-photography"
-                                                data-glightbox="title: Urban Architecture; description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem.">
+                                                data-glightbox="title: Ikan; description: Ikan merupakan sumber protein tinggi dan kaya lemak sehat seperti omega-3, terutama pada ikan laut seperti salmon dan tuna. Omega-3 berperan penting dalam kesehatan jantung dan otak.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
                                             <a href="portfolio-details.html">
@@ -191,21 +188,21 @@
                                 </div>
                             </figure>
                         </article>
-                    </div><!-- End Portfolio Item -->
+                    </div>
+                    <!-- End Portfolio Item -->
 
                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
                         <article class="portfolio-entry">
                             <figure class="entry-image">
-                                <img src="/assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt=""
+                                <img src="/assets/img/milk_and_cheese.jpg" class="img-fluid" alt=""
                                     loading="lazy">
                                 <div class="entry-overlay">
                                     <div class="overlay-content">
-                                        <div class="entry-meta">Marketing</div>
-                                        <h3 class="entry-title">Social Media Campaign</h3>
+                                        <h3 class="entry-title">Susu dan Keju</h3>
                                         <div class="entry-links">
-                                            <a href="/assets/img/portfolio/portfolio-4.webp" class="glightbox"
+                                            <a href="/assets/img/milk_and_cheese.jpg" class="glightbox"
                                                 data-gallery="portfolio-gallery-marketing"
-                                                data-glightbox="title: Social Media Campaign; description: Quis autem vel eum iure reprehenderit qui in ea voluptate.">
+                                                data-glightbox="title: Susu dan Keju; description: Produk susu dan keju mengandung kalsium, protein, dan vitamin D yang penting untuk kesehatan tulang dan gigi. Pilih varian rendah lemak untuk konsumsi harian yang lebih sehat.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
                                             <a href="portfolio-details.html">
@@ -221,16 +218,15 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
                         <article class="portfolio-entry">
                             <figure class="entry-image">
-                                <img src="/assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt=""
+                                <img src="/assets/img/fruits.jpg" class="img-fluid" alt=""
                                     loading="lazy">
                                 <div class="entry-overlay">
                                     <div class="overlay-content">
-                                        <div class="entry-meta">UI/UX Design</div>
-                                        <h3 class="entry-title">Smart Home Interface</h3>
+                                        <h3 class="entry-title">Buah-buahan</h3>
                                         <div class="entry-links">
-                                            <a href="/assets/img/portfolio/portfolio-2.webp" class="glightbox"
+                                            <a href="/assets/img/fruits.jpg" class="glightbox"
                                                 data-gallery="portfolio-gallery-ui"
-                                                data-glightbox="title: Smart Home Interface; description: At vero eos et accusamus et iusto odio dignissimos ducimus.">
+                                                data-glightbox="title: Buah-buahan; description: Buah-buahan adalah sumber alami vitamin, terutama vitamin C dan A, serta serat dan air. Mereka membantu hidrasi tubuh, melancarkan pencernaan, dan melindungi sel dari kerusakan oksidatif.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
                                             <a href="portfolio-details.html">
@@ -246,16 +242,15 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
                         <article class="portfolio-entry">
                             <figure class="entry-image">
-                                <img src="/assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt=""
+                                <img src="/assets/img/vegetables.jpg" class="img-fluid" alt=""
                                     loading="lazy">
                                 <div class="entry-overlay">
                                     <div class="overlay-content">
-                                        <div class="entry-meta">Development</div>
-                                        <h3 class="entry-title">Cloud Management System</h3>
+                                        <h3 class="entry-title">Sayuran</h3>
                                         <div class="entry-links">
-                                            <a href="/assets/img/portfolio/portfolio-11.webp" class="glightbox"
+                                            <a href="/assets/img/vegetables.jpg" class="glightbox"
                                                 data-gallery="portfolio-gallery-development"
-                                                data-glightbox="title: Cloud Management System; description: Temporibus autem quibusdam et aut officiis debitis.">
+                                                data-glightbox="title: Sayuran; description: Sayuran mengandung serat, vitamin, mineral, dan antioksidan yang penting untuk pencernaan dan daya tahan tubuh. Konsumsi beragam sayuran setiap hari membantu menjaga kesehatan jangka panjang.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
                                             <a href="portfolio-details.html">
@@ -271,16 +266,15 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
                         <article class="portfolio-entry">
                             <figure class="entry-image">
-                                <img src="/assets/img/portfolio/portfolio-8.webp" class="img-fluid" alt=""
+                                <img src="/assets/img/seeds(2).jpg" class="img-fluid" alt=""
                                     loading="lazy">
                                 <div class="entry-overlay">
                                     <div class="overlay-content">
-                                        <div class="entry-meta">Photography</div>
-                                        <h3 class="entry-title">Nature Collection</h3>
+                                        <h3 class="entry-title">Biji-bijian</h3>
                                         <div class="entry-links">
-                                            <a href="/assets/img/portfolio/portfolio-8.webp" class="glightbox"
+                                            <a href="/assets/img/seeds(2).jpg" class="glightbox"
                                                 data-gallery="portfolio-gallery-photography"
-                                                data-glightbox="title: Nature Collection; description: Integer posuere erat a ante venenatis dapibus posuere velit aliquet.">
+                                                data-glightbox="title: Biji-bijian; description: Biji-bijian utuh seperti beras merah, quinoa, dan gandum merupakan sumber karbohidrat kompleks, serat, vitamin B, dan mineral. Mereka membantu menjaga energi dan kestabilan kadar gula darah.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
                                             <a href="portfolio-details.html">
@@ -296,16 +290,15 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
                         <article class="portfolio-entry">
                             <figure class="entry-image">
-                                <img src="/assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt=""
+                                <img src="/assets/img/root_vegetables.jpg" class="img-fluid" alt=""
                                     loading="lazy">
                                 <div class="entry-overlay">
                                     <div class="overlay-content">
-                                        <div class="entry-meta">Marketing</div>
-                                        <h3 class="entry-title">Brand Strategy</h3>
+                                        <h3 class="entry-title">Umbi-umbian</h3>
                                         <div class="entry-links">
-                                            <a href="/assets/img/portfolio/portfolio-5.webp" class="glightbox"
+                                            <a href="/assets/img/root_vegetables.jpg" class="glightbox"
                                                 data-gallery="portfolio-gallery-marketing"
-                                                data-glightbox="title: Brand Strategy; description: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.">
+                                                data-glightbox="title: Umbi-umbian; description: Umbi-umbian seperti kentang, ubi, dan singkong kaya akan karbohidrat kompleks, serat, serta vitamin dan mineral seperti vitamin C dan kalium. Mereka baik untuk sumber energi alami.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
                                             <a href="portfolio-details.html">
