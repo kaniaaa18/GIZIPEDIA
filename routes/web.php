@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Web\FoodController;
 use App\Http\Controllers\Web\ForumController;
-use App\Http\Controllers\Web\RecipeController;
+use App\Http\Controllers\RecipeController;
 use App\Http\Controllers\Web\ArticleController;
 use App\Http\Controllers\Web\CalculatorController;
 
@@ -12,30 +12,26 @@ Route::get('/', function () {
     return view('app.home');
 });
 
-
 Route::get('/about', function () { 
     return view('app.about');
 });
 
-
 Route::get('/content', [ArticleController::class, 'index'])->name('app.content');
 Route::get('/content/{article:slug}', [ArticleController::class, 'show'])->name('app.content-article');
-
 
 Route::get('/food', [FoodController::class, 'index']);
 Route::get('/food/{slug}', [FoodController::class, 'show']);
 
-
 Route::get('/forum', [ForumController::class, 'index'])->name('forum.index');
 Route::post('/forum', [ForumController::class, 'store'])->name('forum.store');
 
+Route::get('/recipe', [RecipeController::class, 'index'])->name('recipes.index');
+// Route::get('/recipe/{slug}', [RecipeController::class, 'show']);
 
-Route::get('/recipe', [RecipeController::class, 'index']);
-Route::get('/recipe/{slug}', [RecipeController::class, 'show']);
-Route::get('/content', function () {
-    return view('app.content');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/recipe/create', [RecipeController::class, 'create'])->name('recipes.create');
+    Route::post('/recipe', [RecipeController::class, 'store'])->name('recipes.store');
 });
-
 
 Route::get('/calculator', [CalculatorController::class, 'index'])->name('kalkulator.index');
 Route::post('/calculator', [CalculatorController::class, 'hitung'])->name('kalkulator.hitung');
