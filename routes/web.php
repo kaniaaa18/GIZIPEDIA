@@ -30,6 +30,12 @@ Route::post('/forum/{id}/answer', [ForumController::class, 'storeAnswer'])->name
 Route::get('/recipe', [RecipeController::class, 'index'])->name('recipe.index');
 Route::get('/recipes/{id}', [RecipeController::class, 'show'])->name('recipes.show');
 
+Route::get('/recipe/ayam_panggang', [RecipeController::class, 'ayamPanggang'])->name('recipe.ayam_panggang');
+Route::get('/recipe/salad_quinoa', [RecipeController::class, 'saladQuinoa'])->name('recipe.salad_quinoa');
+Route::get('/recipe/ikan_salmon', [RecipeController::class, 'ikanSalmon'])->name('recipe.ikan_salmon');
+Route::get('/recipe/sup_sayuran', [RecipeController::class, 'supSayuran'])->name('recipe.sup_sayuran');
+Route::get('/recipe/roti_biji_bijian', [RecipeController::class, 'rotiBijiBijian'])->name('recipe.roti_biji_bijian');
+
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/recipe/create', [RecipeController::class, 'create'])->name('recipes.create');

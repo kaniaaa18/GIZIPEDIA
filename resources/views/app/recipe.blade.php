@@ -121,7 +121,7 @@
                                     style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                             <div class="recipe-info flex-grow-1" style="margin-left: 15px;">
-                                <h4><a href="{{ url('/recipe/roti_biji_bijian') }}">Roti Biji-Bijian dengan Keju</a>
+                                <h4><a href="{{ route('recipe.roti_biji_bijian') }}">Roti Biji-Bijian dengan Keju</a>
                                 </h4>
                                 <p style="margin-top: 10px;">Campur bahan, diamkan hingga mengembang, lalu panggang
                                     selama
@@ -139,7 +139,7 @@
                                     style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                             <div class="recipe-info flex-grow-1" style="margin-left: 15px;">
-                                <h4><a href="{{ url('/recipe/sup_sayuran') }}">Sup Sayuran dengan Daging Sapi</a></h4>
+                                <h4><a href="{{ route('recipe.sup_sayuran') }}">Sup Sayuran dengan Daging Sapi</a></h4>
                                 <p style="margin-top: 10px;">Tumis daging, tambahkan sayuran, dan masak hingga mendidih.
                                 </p>
                             </div>
@@ -155,7 +155,7 @@
                                     style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                             <div class="recipe-info flex-grow-1" style="margin-left: 15px;">
-                                <h4><a href="{{ url('/recipe/ikan_salmon') }}">Ikan Salmon Bakar dengan Kentang</a></h4>
+                                <h4><a href="{{ route('recipe.ikan_salmon') }}">Ikan Salmon Bakar dengan Kentang</a></h4>
                                 <p style="margin-top: 10px;">Panggang salmon selama 15-20 menit dan sajikan dengan
                                     kentang.
                                 </p>
@@ -172,7 +172,7 @@
                                     style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                             <div class="recipe-info flex-grow-1" style="margin-left: 15px;">
-                                <h4><a href="{{ url('/recipe/salad_quinoa') }}">Salad Quinoa dengan Buah</a></h4>
+                                <h4><a href="{{ route('recipe.salad_quinoa') }}">Salad Quinoa dengan Buah</a></h4>
                                 <p style="margin-top: 10px;">Masak quinoa, campur dengan buah dan sajikan dingin.</p>
                             </div>
                         </div>
@@ -187,7 +187,7 @@
                                     style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                             <div class="recipe-info flex-grow-1" style="margin-left: 15px;">
-                                <h4><a href="{{ url('/recipe/ayam_panggang') }}">Ayam Panggang dengan Sayuran</a></h4>
+                                <h4><a href="{{ route('recipe.ayam_panggang') }}">Ayam Panggang dengan Sayuran</a></h4>
                                 <p style="margin-top: 10px;">Panaskan oven pada suhu 200°C. Lumuri ayam dengan bumbu dan
                                     panggang selama 25-30 menit.</p>
                             </div>
