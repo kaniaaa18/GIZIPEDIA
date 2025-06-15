@@ -93,23 +93,20 @@
                 <div class="row">
                     <div class="col-lg-7 content-col" data-aos="fade-up">
                         <div class="content">
-                            <div class="agency-name">
-                                <h5>OUR AGENCY</h5>
-                            </div>
 
                             <div class="main-heading">
                                 <h1>PAHAMI GIZI, <br>WUJUDKAN, <br>HIDUP SEHAT</h1>
                             </div>
 
-                            
+
 
                             <div class="description">
                                 <h4>Informasi Gizi Seimbang untuk Kesehatan
-                                Anda dan Keluarga</h4>
+                                    Anda dan Keluarga</h4>
                                 <p>Portal edukasi gizi terpercaya di Indonesia ini
-                                menyediakan materi visual, alat bantu perencanaan
-                                makan sehat, serta komunitas diskusi yang dapat diakses
-                                kapan saja.</p>
+                                    menyediakan materi visual, alat bantu perencanaan
+                                    makan sehat, serta komunitas diskusi yang dapat diakses
+                                    kapan saja.</p>
                             </div>
 
                             <div class="cta-button">
@@ -128,13 +125,13 @@
                                     class="fluid-img">
                             </div>
 
-                                <div class="stats-arrow">
-                                    <a href="#services"><i class="bi bi-arrow-up-right"></i></a>
-                                </div>
+                            <div class="stats-arrow">
+                                <a href="#services"><i class="bi bi-arrow-up-right"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section><!-- /Hero Section -->
 
@@ -150,7 +147,8 @@
 
                 <div class="row gx-5 align-items-center">
                     <h2>Kenali Gizi, Wujudkan Hidup Sehat Bersama GIZIPEDIA</h2>
-                    <p class="lead">GIZIPEDIA hadir sebagai platform edukasi yang membantu kamu memahami gizi dengan cara yang mudah, menyenangkan, dan bermanfaat.</p>
+                    <p class="lead">GIZIPEDIA hadir sebagai platform edukasi yang membantu kamu memahami gizi dengan
+                        cara yang mudah, menyenangkan, dan bermanfaat.</p>
                     <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
                         <div class="about-image position-relative">
                             <img src="/assets/img/about/about-home.png" class="img-fluid rounded-4 shadow-sm"
@@ -159,66 +157,74 @@
                     </div>
 
                     <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left" data-aos-delay="300">
-                    <div class="about-content">
-                        <div class="row g-4 mt-3">
+                        <div class="about-content">
+                            <div class="row g-4 mt-3">
 
-                        <!-- Fitur GIZIPEDIA -->
-                        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="400">
-                            <div class="feature-item shadow-sm rounded-4 p-4 bg-light h-100">
-                            <h5 class="fw-bold text-danger mb-3">
-                                <i class="bi bi-heart-pulse-fill me-2"></i>
-                                Manfaat Utama GIZIPEDIA
-                            </h5>
-                            <ul class="list-unstyled mb-0">
-                                <li class="d-flex align-items-start mb-3">
-                                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
-                                <span><strong>Kalkulator Gizi Personal:</strong> Bantu atur kebutuhan gizi harian sesuai profilmu.</span>
-                                </li>
-                                <li class="d-flex align-items-start mb-3">
-                                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
-                                <span><strong>Konten Edukatif Interaktif:</strong> Materi visual yang mudah dimengerti & seru dipelajari.</span>
-                                </li>
-                                <li class="d-flex align-items-start mb-3">
-                                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
-                                <span><strong>Forum Komunitas:</strong> Bertanya & berdiskusi langsung dengan ahli dan sesama pengguna.</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
-                                <span><strong>Resep Sehat Harian:</strong> Inspirasi makanan lezat, bergizi, dan praktis setiap hari.</span>
-                                </li>
-                            </ul>
+                                <!-- Fitur GIZIPEDIA -->
+                                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                                    <div class="feature-item shadow-sm rounded-4 p-4 bg-light h-100">
+                                        <h5 class="fw-bold text-danger mb-3">
+                                            <i class="bi bi-heart-pulse-fill me-2"></i>
+                                            Manfaat Utama GIZIPEDIA
+                                        </h5>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                                <span><strong>Kalkulator Gizi Personal:</strong> Bantu atur kebutuhan
+                                                    gizi harian sesuai profilmu.</span>
+                                            </li>
+                                            <li class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                                <span><strong>Konten Edukatif Interaktif:</strong> Materi visual yang
+                                                    mudah dimengerti & seru dipelajari.</span>
+                                            </li>
+                                            <li class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                                <span><strong>Forum Komunitas:</strong> Bertanya & berdiskusi langsung
+                                                    dengan ahli dan sesama pengguna.</span>
+                                            </li>
+                                            <li class="d-flex align-items-start">
+                                                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                                <span><strong>Resep Sehat Harian:</strong> Inspirasi makanan lezat,
+                                                    bergizi, dan praktis setiap hari.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Inovasi Gizi -->
+                                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="450">
+                                    <div class="feature-item shadow-sm rounded-4 p-4 bg-light h-100">
+                                        <h5 class="fw-bold text-danger mb-3">
+                                            <i class="bi bi-lightbulb-fill me-2"></i>
+                                            Pendekatan Inovatif Kami
+                                        </h5>
+                                        <ul class="list-unstyled">
+                                            <li class="d-flex align-items-start mb-2">
+                                                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                                <span><strong>Personalisasi:</strong> Materi dan fitur disesuaikan
+                                                    dengan usia, aktivitas, dan tujuan kesehatan Anda.</span>
+                                            </li>
+                                            <li class="d-flex align-items-start mb-2">
+                                                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                                <span><strong>Visual Interaktif:</strong> Gunakan infografik dan
+                                                    ilustrasi menarik agar lebih mudah dipahami.</span>
+                                            </li>
+                                            <li class="d-flex align-items-start">
+                                                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                                <span><strong>Kolaborasi Ahli:</strong> Semua konten telah dikurasi oleh
+                                                    pakar gizi dan kesehatan terpercaya.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
                             </div>
+                            <a href="{{ url('/about') }}"
+                                class="btn btn-outline-danger mt-4 px-4 py-2 fw-semibold rounded-pill">
+                                <i class="bi bi-arrow-right-circle me-2"></i> Kenali Lebih Lanjut
+                            </a>
                         </div>
-
-                        <!-- Inovasi Gizi -->
-                        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="450">
-                            <div class="feature-item shadow-sm rounded-4 p-4 bg-light h-100">
-                            <h5 class="fw-bold text-danger mb-3">
-                                <i class="bi bi-lightbulb-fill me-2"></i>
-                                Pendekatan Inovatif Kami
-                            </h5>
-                            <ul class="list-unstyled">
-                            <li class="d-flex align-items-start mb-2">
-                                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
-                                <span><strong>Personalisasi:</strong> Materi dan fitur disesuaikan dengan usia, aktivitas, dan tujuan kesehatan Anda.</span>
-                            </li>
-                            <li class="d-flex align-items-start mb-2">
-                                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
-                                <span><strong>Visual Interaktif:</strong> Gunakan infografik dan ilustrasi menarik agar lebih mudah dipahami.</span>
-                            </li>
-                            <li class="d-flex align-items-start">
-                                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
-                                <span><strong>Kolaborasi Ahli:</strong> Semua konten telah dikurasi oleh pakar gizi dan kesehatan terpercaya.</span>
-                            </li>
-                            </ul>
-                            </div>
-                        </div>
-
-                        </div>
-                        <a href="/tentang-kami" class="btn btn-outline-danger mt-4 px-4 py-2 fw-semibold rounded-pill">
-                        <i class="bi bi-arrow-right-circle me-2"></i> Kenali Lebih Lanjut
-                        </a>
-                    </div>
                     </div>
 
 
@@ -229,7 +235,8 @@
                         <div class="col-lg-4" data-aos="fade-right" data-aos-delay="200">
                             <div class="testimonial-intro">
                                 <h3>Testimoni Pengguna</h3>
-                                <p>Bukti nyata dari ribuan pengguna yang telah menemukan solusi kesehatan berbasis ilmu gizi yang tepat.</p>
+                                <p>Bukti nyata dari ribuan pengguna yang telah menemukan solusi kesehatan berbasis ilmu
+                                    gizi yang tepat.</p>
                                 <div class="swiper-nav-buttons mt-4">
                                     <button class="slider-prev"><i class="bi bi-arrow-left"></i></button>
                                     <button class="slider-next"><i class="bi bi-arrow-right"></i></button>
@@ -262,11 +269,12 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="testimonial-item">
-                                            <p>"Berkat Gizipedia, saya akhirnya memahami mengapa program diet sebelumnya tidak bekerja. 
+                                            <p>"Berkat Gizipedia, saya akhirnya memahami mengapa program diet sebelumnya
+                                                tidak bekerja.
                                                 Sekarang saya bisa menurunkan berat badan dengan cara yang sehat."</p>
                                             <div class="client-info d-flex align-items-center mt-4">
-                                                <img src="/assets/img/person/person.png" class="client-img"
-                                                    alt="Client" loading="lazy">
+                                                <img src="/assets/img/person/person.png" class="client-img" alt="Client"
+                                                    loading="lazy">
                                                 <div>
                                                     <h6 class="mb-0">Gege Pranajaya</h6>
                                                     <span>2025</span>
@@ -277,10 +285,11 @@
 
                                     <div class="swiper-slide">
                                         <div class="testimonial-item">
-                                            <p>"Forum ini sangat membantu dengan jawaban dari profesional. Tidak seperti platform lain yang penuh dengan informasi tidak akurat."</p>
+                                            <p>"Forum ini sangat membantu dengan jawaban dari profesional. Tidak seperti
+                                                platform lain yang penuh dengan informasi tidak akurat."</p>
                                             <div class="client-info d-flex align-items-center mt-4">
-                                                <img src="/assets/img/person/person.png" class="client-img"
-                                                    alt="Client" loading="lazy">
+                                                <img src="/assets/img/person/person.png" class="client-img" alt="Client"
+                                                    loading="lazy">
                                                 <div>
                                                     <h6 class="mb-0">Haikal Fernandez</h6>
                                                     <span>2025</span>
@@ -291,10 +300,11 @@
 
                                     <div class="swiper-slide">
                                         <div class="testimonial-item">
-                                            <p>"Saya suka bisa bertanya secara anonim tentang masalah sensitif. Tim ahli di sini sangat membantu dan tidak menghakimi."</p>
+                                            <p>"Saya suka bisa bertanya secara anonim tentang masalah sensitif. Tim ahli
+                                                di sini sangat membantu dan tidak menghakimi."</p>
                                             <div class="client-info d-flex align-items-center mt-4">
-                                                <img src="/assets/img/person/person.png" class="client-img"
-                                                    alt="Client" loading="lazy">
+                                                <img src="/assets/img/person/person.png" class="client-img" alt="Client"
+                                                    loading="lazy">
                                                 <div>
                                                     <span>2024</span>
                                                 </div>
@@ -304,10 +314,11 @@
 
                                     <div class="swiper-slide">
                                         <div class="testimonial-item">
-                                            <p>"Sistem anonimnya membuat saya nyaman bertanya tentang masalah sensitif. Terima kasih Gizipedia!"</p>
+                                            <p>"Sistem anonimnya membuat saya nyaman bertanya tentang masalah sensitif.
+                                                Terima kasih Gizipedia!"</p>
                                             <div class="client-info d-flex align-items-center mt-4">
-                                                <img src="/assets/img/person/person.png" class="client-img"
-                                                    alt="Client" loading="lazy">
+                                                <img src="/assets/img/person/person.png" class="client-img" alt="Client"
+                                                    loading="lazy">
                                                 <div>
                                                     <span>2025</span>
                                                 </div>
@@ -325,51 +336,52 @@
 
         </section><!-- /About Section -->
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
+        <!-- Content Section -->
+        <section id="services" class="services section">
 
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Konten</h2>
-            <div><span>Artikel</span></div>
-        </div><!-- End Section Title -->
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Konten</h2>
+                <div><span>Artikel</span></div>
+            </div><!-- End Section Title -->
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-header">
-                <div class="row align-items-center">
-                    
-                    <!-- Kiri -->
-                    <div class="col-lg-8 col-md-12">
-                        <div class="service-intro">
-                            <h2 class="service-heading">
-                                <div>Temukan informasi</div>
-                                <div><span>bergizi dan inspiratif</span></div>
-                            </h2>
-                            <p class="mt-3">
-                                Mulai hari dengan pengetahuan yang sehat dan bermanfaat.
-                                Jelajahi artikel-artikel terbaru seputar gizi, kesehatan, dan gaya hidup seimbang hanya di GIZIPEDIA.
-                            </p>
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-header">
+                    <div class="row align-items-center">
+
+                        <!-- Kiri -->
+                        <div class="col-lg-8 col-md-12">
+                            <div class="service-intro">
+                                <h2 class="service-heading">
+                                    <div>Temukan informasi</div>
+                                    <div><span>bergizi dan inspiratif</span></div>
+                                </h2>
+                                <p class="mt-3">
+                                    Mulai hari dengan pengetahuan yang sehat dan bermanfaat.
+                                    Jelajahi artikel-artikel terbaru seputar gizi, kesehatan, dan gaya hidup seimbang
+                                    hanya di GIZIPEDIA.
+                                </p>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Kanan -->
-                    <div class="col-lg-4 col-md-12">
-                        <div class="service-summary text-lg-end mt-4 mt-lg-0">
-                            <a href="services.html" class="service-btn">
-                                Lihat Semua Artikel
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
+                        <!-- Kanan -->
+                        <div class="col-lg-4 col-md-12">
+                            <div class="service-summary text-lg-end mt-4 mt-lg-0">
+                                <a href="{{ route('app.content') }}" class="service-btn">
+                                    Lihat Semua Artikel
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </section><!-- /Services Section -->
+        </section><!-- /Services Section -->
 
 
- 
+
     </main>
 
     <footer id="footer" class="footer">

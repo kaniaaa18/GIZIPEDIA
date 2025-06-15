@@ -2,10 +2,13 @@
 
 namespace App\Models;
 
+use App\Models\Recipe;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\Models\ArticleLog;
+use App\Models\CalculationLog;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
@@ -49,5 +52,15 @@ class User extends Authenticatable implements MustVerifyEmail
     public function recipes()
     {
         return $this->hasMany(Recipe::class);
+    }
+
+    public function articleLogs()
+    {
+        return $this->hasMany(ArticleLog::class);
+    }
+
+    public function calculationLogs()
+    {
+        return $this->hasMany(CalculationLog::class);
     }
 }

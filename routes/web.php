@@ -1,12 +1,12 @@
 <?php
 
+use App\Models\Article;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Web\FoodController;
 use App\Http\Controllers\Web\ForumController;
 use App\Http\Controllers\RecipeController;
 use App\Http\Controllers\Web\ArticleController;
-use App\Http\Controllers\Web\CalculatorController;
 
 Route::get('/', function () {
     return view('app.home');
@@ -39,6 +39,10 @@ Route::post('/calculator', [CalculatorController::class, 'hitung'])->name('kalku
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+// Route::post('/calculation', [CalculatorController::class, 'hitung'])->middleware('auth');
+// Route::post('/article', [ArticleController::class, 'article'])->middleware('auth');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

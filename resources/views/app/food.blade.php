@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Index - Strategy Bootstrap Template</title>
+    <title>GIZIPEDIA</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -85,7 +85,7 @@
         </div>
     </header>
 
-    <!-- Portfolio Section -->
+    <!-- Food Section -->
     <section id="portfolio" class="portfolio section">
 
         <!-- Section Title -->
@@ -94,35 +94,16 @@
         </div>
         <!-- End Section Title -->
 
-        <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+        <div class="container-fluid mt-4" data-aos="fade-up" data-aos-delay="100">
 
             <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-                <!-- <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
-                    <li data-filter="*" class="filter-active">
-                        <i class="bi bi-grid-3x3"></i> All Projects
-                    </li>
-                    <li data-filter=".filter-ui">
-                        <i class="bi bi-phone"></i> UI/UX
-                    </li>
-                    <li data-filter=".filter-development">
-                        <i class="bi bi-code-slash"></i> Development
-                    </li>
-                    <li data-filter=".filter-photography">
-                        <i class="bi bi-camera"></i> Photography
-                    </li>
-                    <li data-filter=".filter-marketing">
-                        <i class="bi bi-graph-up"></i> Marketing
-                    </li>
-                </ul> -->
 
                 <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
 
                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
                         <article class="portfolio-entry">
                             <figure class="entry-image">
-                                <img src="/assets/img/raw-beef-meat.jpg" class="img-fluid" alt=""
-                                    loading="lazy">
+                                <img src="/assets/img/raw-beef-meat.jpg" class="img-fluid" alt="" loading="lazy">
                                 <div class="entry-overlay">
                                     <div class="overlay-content">
                                         <h3 class="entry-title">Daging</h3>
@@ -132,21 +113,21 @@
                                                 data-glightbox="title: Daging; description: Daging merah seperti sapi dan kambing merupakan sumber protein hewani yang kaya zat besi, seng, dan vitamin B12. Konsumsi dalam jumlah seimbang membantu pembentukan otot dan mendukung kesehatan darah.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
-                                            <a href="details.html">
+                                            <a href="{{ route('food-category', 'daging') }}">
                                                 <i class="bi bi-arrow-right"></i>
                                             </a>
+
                                         </div>
                                     </div>
                                 </div>
                             </figure>
                         </article>
-                    </div><!-- End Portfolio Item -->
+                    </div><!-- End Food Item -->
 
                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
                         <article class="portfolio-entry">
                             <figure class="entry-image">
-                                <img src="/assets/img/raw-chicken.jpg" class="img-fluid" alt=""
-                                    loading="lazy">
+                                <img src="/assets/img/raw-chicken.jpg" class="img-fluid" alt="" loading="lazy">
                                 <div class="entry-overlay">
                                     <div class="overlay-content">
                                         <h3 class="entry-title">Daging Ayam</h3>
@@ -156,21 +137,21 @@
                                                 data-glightbox="title: Daging Ayam; description: Daging ayam merupakan sumber protein rendah lemak, terutama bagian dada tanpa kulit. Kaya akan niasin dan selenium, ayam bermanfaat untuk metabolisme tubuh dan sistem kekebalan.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
-                                            <a href="details.html">
+                                            <a href="{{ route('food-category', 'daging-ayam') }}">
                                                 <i class="bi bi-arrow-right"></i>
                                             </a>
+
                                         </div>
                                     </div>
                                 </div>
                             </figure>
                         </article>
-                    </div><!-- End Portfolio Item -->
+                    </div><!-- End Food Item -->
 
                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
                         <article class="portfolio-entry">
                             <figure class="entry-image">
-                                <img src="/assets/img/fish.jpg" class="img-fluid" alt=""
-                                    loading="lazy">
+                                <img src="/assets/img/fish.jpg" class="img-fluid" alt="" loading="lazy">
                                 <div class="entry-overlay">
                                     <div class="overlay-content">
                                         <h3 class="entry-title">Ikan</h3>
@@ -180,22 +161,22 @@
                                                 data-glightbox="title: Ikan; description: Ikan merupakan sumber protein tinggi dan kaya lemak sehat seperti omega-3, terutama pada ikan laut seperti salmon dan tuna. Omega-3 berperan penting dalam kesehatan jantung dan otak.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
-                                            <a href="details.html">
+                                            <a href="{{ route('food-category', 'ikan') }}">
                                                 <i class="bi bi-arrow-right"></i>
                                             </a>
+
                                         </div>
                                     </div>
                                 </div>
                             </figure>
                         </article>
                     </div>
-                    <!-- End Portfolio Item -->
+                    <!-- End Food Item -->
 
                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
                         <article class="portfolio-entry">
                             <figure class="entry-image">
-                                <img src="/assets/img/milk_and_cheese.jpg" class="img-fluid" alt=""
-                                    loading="lazy">
+                                <img src="/assets/img/milk_and_cheese.jpg" class="img-fluid" alt="" loading="lazy">
                                 <div class="entry-overlay">
                                     <div class="overlay-content">
                                         <h3 class="entry-title">Susu dan Keju</h3>
@@ -205,21 +186,21 @@
                                                 data-glightbox="title: Susu dan Keju; description: Produk susu dan keju mengandung kalsium, protein, dan vitamin D yang penting untuk kesehatan tulang dan gigi. Pilih varian rendah lemak untuk konsumsi harian yang lebih sehat.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
-                                            <a href="details.html">
+                                            <a href="{{ route('food-category', 'susu-dan-keju') }}">
                                                 <i class="bi bi-arrow-right"></i>
                                             </a>
+
                                         </div>
                                     </div>
                                 </div>
                             </figure>
                         </article>
-                    </div><!-- End Portfolio Item -->
+                    </div><!-- End Food Item -->
 
                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
                         <article class="portfolio-entry">
                             <figure class="entry-image">
-                                <img src="/assets/img/fruits.jpg" class="img-fluid" alt=""
-                                    loading="lazy">
+                                <img src="/assets/img/fruits.jpg" class="img-fluid" alt="" loading="lazy">
                                 <div class="entry-overlay">
                                     <div class="overlay-content">
                                         <h3 class="entry-title">Buah-buahan</h3>
@@ -229,21 +210,21 @@
                                                 data-glightbox="title: Buah-buahan; description: Buah-buahan adalah sumber alami vitamin, terutama vitamin C dan A, serta serat dan air. Mereka membantu hidrasi tubuh, melancarkan pencernaan, dan melindungi sel dari kerusakan oksidatif.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
-                                            <a href="details.html">
+                                            <a href="{{ route('food-category', 'buah-buahan') }}">
                                                 <i class="bi bi-arrow-right"></i>
                                             </a>
+
                                         </div>
                                     </div>
                                 </div>
                             </figure>
                         </article>
-                    </div><!-- End Portfolio Item -->
+                    </div><!-- End Food Item -->
 
                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
                         <article class="portfolio-entry">
                             <figure class="entry-image">
-                                <img src="/assets/img/vegetables.jpg" class="img-fluid" alt=""
-                                    loading="lazy">
+                                <img src="/assets/img/vegetables.jpg" class="img-fluid" alt="" loading="lazy">
                                 <div class="entry-overlay">
                                     <div class="overlay-content">
                                         <h3 class="entry-title">Sayuran</h3>
@@ -253,21 +234,21 @@
                                                 data-glightbox="title: Sayuran; description: Sayuran mengandung serat, vitamin, mineral, dan antioksidan yang penting untuk pencernaan dan daya tahan tubuh. Konsumsi beragam sayuran setiap hari membantu menjaga kesehatan jangka panjang.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
-                                            <a href="details.html">
+                                            <a href="{{ route('food-category', 'sayuran') }}">
                                                 <i class="bi bi-arrow-right"></i>
                                             </a>
+
                                         </div>
                                     </div>
                                 </div>
                             </figure>
                         </article>
-                    </div><!-- End Portfolio Item -->
+                    </div><!-- End Food Item -->
 
                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
                         <article class="portfolio-entry">
                             <figure class="entry-image">
-                                <img src="/assets/img/seeds(2).jpg" class="img-fluid" alt=""
-                                    loading="lazy">
+                                <img src="/assets/img/seeds(2).jpg" class="img-fluid" alt="" loading="lazy">
                                 <div class="entry-overlay">
                                     <div class="overlay-content">
                                         <h3 class="entry-title">Biji-bijian</h3>
@@ -277,21 +258,21 @@
                                                 data-glightbox="title: Biji-bijian; description: Biji-bijian utuh seperti beras merah, quinoa, dan gandum merupakan sumber karbohidrat kompleks, serat, vitamin B, dan mineral. Mereka membantu menjaga energi dan kestabilan kadar gula darah.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
-                                            <a href="details.html">
+                                            <a href="{{ route('food-category', 'biji-bijian') }}">
                                                 <i class="bi bi-arrow-right"></i>
                                             </a>
+
                                         </div>
                                     </div>
                                 </div>
                             </figure>
                         </article>
-                    </div><!-- End Portfolio Item -->
+                    </div><!-- End Food Item -->
 
                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
                         <article class="portfolio-entry">
                             <figure class="entry-image">
-                                <img src="/assets/img/root_vegetables.jpg" class="img-fluid" alt=""
-                                    loading="lazy">
+                                <img src="/assets/img/root_vegetables.jpg" class="img-fluid" alt="" loading="lazy">
                                 <div class="entry-overlay">
                                     <div class="overlay-content">
                                         <h3 class="entry-title">Umbi-umbian</h3>
@@ -301,23 +282,24 @@
                                                 data-glightbox="title: Umbi-umbian; description: Umbi-umbian seperti kentang, ubi, dan singkong kaya akan karbohidrat kompleks, serat, serta vitamin dan mineral seperti vitamin C dan kalium. Mereka baik untuk sumber energi alami.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
-                                            <a href="details.html">
+                                            <a href="{{ route('food-category', 'umbi-umbian') }}">
                                                 <i class="bi bi-arrow-right"></i>
                                             </a>
+
                                         </div>
                                     </div>
                                 </div>
                             </figure>
                         </article>
-                    </div><!-- End Portfolio Item -->
+                    </div><!-- End Food Item -->
 
-                </div><!-- End Portfolio Container -->
+                </div><!-- End Food Container -->
 
             </div>
 
         </div>
 
-    </section><!-- /Portfolio Section -->
+    </section><!-- /Food Section -->
 
 
     <footer id="footer" class="footer">

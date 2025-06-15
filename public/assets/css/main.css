@@ -1059,6 +1059,23 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Like Button
+--------------------------------------------------------------*/
+.like-button {
+    background-color: white;
+    border: 1px solid #ccc;
+    color: black;
+    padding: 4px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.like-button.liked {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
 .about {

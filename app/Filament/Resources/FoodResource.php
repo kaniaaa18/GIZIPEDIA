@@ -7,6 +7,7 @@ use App\Models\Food;
 use Filament\Tables;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
+use Illuminate\Support\Str;
 use Filament\Resources\Resource;
 use Filament\Forms\Components\Select;
 use Filament\Tables\Columns\TextColumn;
@@ -28,13 +29,22 @@ class FoodResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('name')->required(),
+                TextInput::make('name')
+                    ->live(onBlur: true)
+                    ->afterStateUpdated(fn ($state, callable $set) => $set('slug', Str::slug($state)))
+                    ->required(),
+
+                TextInput::make('slug')
+                    ->required()
+                    ->disabled() // tidak bisa diisi manual dari panel
+                    ->dehydrated() // tetap disimpan saat submit
+                    ->unique(ignoreRecord: true),
                 TextInput::make('unit')->required(),
                 TextInput::make('calories')->numeric()->required(),
                 TextInput::make('protein')->numeric()->required(),
                 TextInput::make('carbs')->numeric()->required(),
                 TextInput::make('fat')->numeric()->required(),
-                FileUpload::make('image')->required(),
+                FileUpload::make('image'),
                 Select::make('category_id')
                     ->relationship('category', 'name')
                     ->searchable()
