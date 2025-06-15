@@ -9,21 +9,21 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+   public function up(): void
     {
         Schema::create('forums', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->text('content');
+            $table->string('name')->nullable();
+            $table->text('question');
+            $table->boolean('is_anonim')->default(false);
             $table->timestamps();
         });
+
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
         Schema::dropIfExists('forums');
     }
+
 };

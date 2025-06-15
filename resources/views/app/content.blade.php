@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Index - Strategy Bootstrap Template</title>
+    <title>GIZIPEDIA</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -94,37 +94,47 @@
         </div><!-- End Section Title -->
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-            <div class="row justify-content-center">
-                @foreach($articles as $article)
-                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="{{ $loop->index * 100 }}">
-                        <div class="service-card position-relative z-1">
-                            <div class="service-icon">
-                                <i class="bi bi-file-earmark-text"></i>
-                            </div>
-                            <a href="{{ route('app.content-article', $article) }}"
-                                class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                                <i class="bi bi-arrow-up-right"></i>
-                            </a>
-                            <h3>
-                                <a href="{{ route('app.content-article', $article) }}">
-                                    {{ Str::limit($article->title, 40) }}
+            @if(isset($articles) && $articles->count())
+                <div class="row justify-content-center">
+                    @foreach($articles as $article)
+                        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="{{ $loop->index * 100 }}">
+                            <div class="service-card position-relative z-1">
+                                <div class="service-icon">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                </div>
+                                <a href="{{ route('app.content-article', $article) }}"
+                                    class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                                    <i class="bi bi-arrow-up-right"></i>
                                 </a>
-                            </h3>
-                            <p>
-                                {{ Str::limit(strip_tags($article->excerpt ?? 'Baca artikel ini untuk informasi lengkap seputar gizi.'), 100) }}
-                            </p>
+                                <h3>
+                                    <a href="{{ route('app.content-article', $article) }}">
+                                        {{ Str::limit($article->title, 100) }}
+                                    </a>
+                                </h3>
+                                <p>
+                                    {{ Str::limit(strip_tags($article->excerpt ?? 'Baca artikel ini untuk informasi lengkap seputar gizi.'), 100) }}
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                @endforeach
-            </div>
+                    @endforeach
+                </div>
 
-            <!-- Pagination (optional) -->
-            <div class="mt-5 d-flex justify-content-center">
-                {{ $articles->links() }}
-            </div>
+                <!-- Pagination -->
+                <div class="mt-4 d-flex justify-content-center">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination pagination-sm">
+                            {{ $articles->links('pagination::bootstrap-4') }}
+                        </ul>
+                    </nav>
+                </div>
+
+            @else
+                <div class="text-center">
+                    <p>Tidak ada artikel yang tersedia saat ini.</p>
+                </div>
+            @endif
         </div>
     </section><!-- /Articles Section -->
-
 
     <footer id="footer" class="footer">
 

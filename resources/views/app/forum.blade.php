@@ -85,83 +85,158 @@
         </div>
     </header>
 
-    <div class="flex flex-col md:flex-row gap-6 p-6 min-h-screen">
+    <div class="container mt-5 pt-5">
+        <div class="row">
+            <!-- Kolom kiri: daftar pertanyaan -->
+            <div class="col-md-6 mb-4">
+                <h3 style="font-weight: 900; font-size: 16px; margin-bottom: 16px;">Daftar Pertanyaan</h3>
 
-        {{-- Daftar Pertanyaan --}}
-        <div class="w-full md:w-2/3 space-y-6">
-            @foreach ($questions as $question)
-                <div class="flex border-[3px] border-[#ECECEC] rounded-[5px] bg-white p-4 items-start gap-4">
-                    {{-- Avatar --}}
-                    <div class="w-[80px]">
-                        <img src="https://via.placeholder.com/60" alt="Avatar" class="rounded-full">
-                    </div>
+                @if ($questions->isEmpty())
+                    <p class="text-muted">Belum ada pertanyaan yang masuk.</p>
+                @else
+                    @foreach ($questions as $question)
+                        <div
+                            style="border: 3px solid #ECECEC; border-radius: 5px; padding: 16px; margin-bottom: 16px; background-color: white;">
+                            <div style="display: flex; gap: 16px; align-items: flex-start;">
+                                <div style="width: 80px;">
+                                    <img src="assets/img/account.png" alt="Avatar"
+                                        style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; filter: grayscale(100%) brightness(0);">
+                                </div>
+                                <div style="flex: 1;">
+                                    <p style="font-weight: 900; font-size: 18px; margin: 0;">
+                                        {{ $question->is_anonim ? 'ANONIM' : ($question->name ?? 'ANONIM') }}
+                                    </p>
+                                    <p style="margin-top: 8px; font-size: 14px; line-height: 1.4;">{{ $question->question }}</p>
+                                    <div
+                                        style="display: flex; justify-content: space-between; margin-top: 12px; font-size: 12px; color: gray;">
+                                        <span>{{ $question->created_at->format('H:i, Y/m/d') }}</span>
+                                        <div style="display: flex; gap: 24px;">
+                                            <button class="btn btn-link p-0" onclick="toggleAnswers({{ $question->id }})">
+                                                {{ $question->comentars->count() }} Jawaban
+                                            </button>
+                                            <button class="like-button" onclick="toggleLike(this)">Suka</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                    {{-- Konten Pertanyaan --}}
-                    <div class="flex-1">
-                        <p class="font-black text-[18px] leading-[16px]">
-                            {{ $question->is_anonim ? 'ANONIM' : ($question->name ?? 'ANONIM') }}
-                        </p>
-                        <p class="text-[14px] mt-2 leading-[20px]">
-                            {{ $question->question }}
-                        </p>
+                            <!-- Bagian Jawaban dan Form -->
+                            <div id="answers-{{ $question->id }}" style="display: none; margin-top: 10px; padding-left: 80px;">
+                                @foreach ($question->comentars as $answer)
+                                    <div style="background-color: #f9f9f9; padding: 10px; margin-bottom: 8px; border-radius: 4px;">
+                                        <strong>{{ $answer->is_anonim ? 'ANONIM' : $answer->name }}</strong>
+                                        <p style="margin: 4px 0;">{{ $answer->answer }}</p>
+                                    </div>
+                                @endforeach
 
-                        <div class="flex items-center justify-between mt-4 text-xs text-gray-500">
-                            <span>{{ $question->created_at->format('H:i, d/m/Y') }}</span>
-                            <div class="flex items-center gap-6">
-                                <span>1 Jawaban</span>
-                                <span>○ Suka</span>
+                                <form method="POST" action="{{ route('forum.answer', $question->id) }}">
+                                    @csrf
+                                    <div style="margin-bottom: 8px;">
+                                        <input type="checkbox" name="is_anonim" id="anonim-answer-{{ $question->id }}"
+                                            onchange="toggleAnswerName({{ $question->id }})">
+                                        <label for="anonim-answer-{{ $question->id }}">Anonim</label>
+                                    </div>
+                                    <div id="answer-name-{{ $question->id }}" style="margin-bottom: 8px;">
+                                        <input type="text" name="name" placeholder="Nama" class="form-control">
+                                    </div>
+                                    <textarea name="answer" placeholder="Tulis jawaban..." class="form-control" rows="2"
+                                        required></textarea>
+                                    <button type="submit" class="btn btn-sm btn-primary mt-2">Kirim Jawaban</button>
+                                </form>
                             </div>
                         </div>
+                    @endforeach
+                @endif
+            </div>
+
+            <!-- Kolom kanan: form kirim pertanyaan -->
+            <div class="col-md-6 mb-4">
+                <h3 style="font-weight: 900; font-size: 16px; margin-bottom: 16px;">Berbagi Masalah Gizimu!</h3>
+
+                @if (session('success'))
+                    <div
+                        style="background-color: #d1fae5; color: #065f46; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; font-size: 14px;">
+                        {{ session('success') }}
                     </div>
-                </div>
-            @endforeach
+                @endif
+
+                <form method="POST" action="{{ route('forum.store') }}">
+                    @csrf
+
+                    <!-- Checkbox Anonim -->
+                    <div style="margin-bottom: 12px;">
+                        <input type="checkbox" name="is_anonim" value="1" id="anonim" onchange="toggleNameInput(this)">
+                        <label for="anonim" style="font-size: 14px;">Centang untuk menjadi anonim</label>
+                    </div>
+
+                    <!-- Field Nama -->
+                    <div id="name-field" style="margin-bottom: 12px;">
+                        <label for="name" style="font-size: 14px;">Nama</label>
+                        <input type="text" name="name" id="name" value="{{ old('name', Auth::user()->name ?? '') }}"
+                            style="width: 100%; border: 1px solid #C4C4C4; padding: 6px 8px; font-size: 14px; border-radius: 4px;">
+                    </div>
+
+                    <!-- Pertanyaan -->
+                    <div style="margin-bottom: 16px;">
+                        <label for="question" style="font-size: 14px;">Pertanyaan</label>
+                        <textarea name="question" id="question" rows="5" required
+                            style="width: 100%; border: 1px solid #C4C4C4; padding: 6px 8px; font-size: 14px; border-radius: 4px;"></textarea>
+                    </div>
+
+                    <!-- Tombol Kirim -->
+                    <div style="text-align: right;">
+                        <button type="submit"
+                            style="background-color: #A63A26; color: white; font-weight: bold; font-size: 12px; padding: 8px 24px; border: none; border-radius: 999px; cursor: pointer;">
+                            KIRIM
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
-
-        {{-- Form Tambah Pertanyaan --}}
-        <div class="w-full md:w-1/3 bg-white border border-[#ECECEC] rounded-[5px] p-4 h-fit">
-            <h3 class="font-black text-[16px] mb-4">Berbagi Masalah Gizimu!</h3>
-
-            @if (session('success'))
-                <div class="bg-green-100 text-green-800 p-2 rounded mb-3 text-sm">
-                    {{ session('success') }}
-                </div>
-            @endif
-
-            <form method="POST" action="{{ route('forum.store') }}">
-                @csrf
-
-                {{-- Anonim --}}
-                <div class="flex items-center mb-3">
-                    <input type="checkbox" name="is_anonim" value="1" id="anonim" class="mr-2">
-                    <label for="anonim" class="text-sm">Centang untuk menjadi anonim</label>
-                </div>
-
-                {{-- Nama --}}
-                <div class="mb-3">
-                    <label for="name" class="text-sm">Nama</label>
-                    <input type="text" name="name" id="name"
-                        class="w-full border border-[#C4C4C4] rounded-sm px-2 py-1 text-sm focus:outline-none focus:ring focus:ring-red-200">
-                </div>
-
-                {{-- Pertanyaan --}}
-                <div class="mb-4">
-                    <label for="question" class="text-sm">Pertanyaan</label>
-                    <textarea name="question" id="question" rows="5"
-                        class="w-full border border-[#C4C4C4] rounded-sm px-2 py-1 text-sm focus:outline-none focus:ring focus:ring-red-200"
-                        required></textarea>
-                </div>
-
-                {{-- Tombol Kirim --}}
-                <div class="text-right">
-                    <button type="submit"
-                        class="bg-[#A63A26] hover:bg-[#8d2f1e] text-white font-bold text-xs px-6 py-2 rounded-full transition-all">
-                        KIRIM
-                    </button>
-                </div>
-            </form>
-        </div>
-
     </div>
+
+
+
+    <!-- Script untuk nonaktifkan input nama jika anonim dicentang -->
+    <script>
+        // Untuk form pertanyaan baru: sembunyikan input nama jika anonim dicentang
+        function toggleNameInput(checkbox) {
+            const nameField = document.getElementById('name-field');
+            if (checkbox.checked) {
+                nameField.style.display = 'none';
+            } else {
+                nameField.style.display = 'block';
+            }
+        }
+
+        // Saat halaman dimuat, sembunyikan field nama jika checkbox anonim dicentang
+        window.addEventListener('DOMContentLoaded', function () {
+            const checkbox = document.getElementById('anonim');
+            if (checkbox) {
+                toggleNameInput(checkbox);
+            }
+        });
+
+        // Fungsi untuk toggle "suka"
+        function toggleLike(button) {
+            button.classList.toggle('liked');
+        }
+
+        // Menampilkan/menyembunyikan jawaban (comentars)
+        function toggleAnswers(id) {
+            const container = document.getElementById(`answers-${id}`);
+            container.style.display = container.style.display === 'none' ? 'block' : 'none';
+        }
+
+        // Menyembunyikan input nama untuk jawaban anonim
+        function toggleAnswerName(id) {
+            const field = document.getElementById(`answer-name-${id}`);
+            const checkbox = document.getElementById(`anonim-answer-${id}`);
+            field.style.display = checkbox.checked ? 'none' : 'block';
+        }
+    </script>
+
+
 
     <footer id="footer" class="footer">
 

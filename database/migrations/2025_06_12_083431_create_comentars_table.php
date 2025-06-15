@@ -12,9 +12,17 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('comentars', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->id();
+            $table->unsignedBigInteger('forum_id');
+            $table->string('name')->nullable();
+            $table->boolean('is_anonim')->default(false);
+            $table->text('answer');
             $table->timestamps();
+
+            $table->foreign('forum_id')->references('id')->on('forums')->onDelete('cascade');
         });
+
     }
 
     /**

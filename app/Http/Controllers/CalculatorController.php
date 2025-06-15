@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
+use App\Models\CalculationLog;
 
 class CalculatorController extends Controller
 {
@@ -71,6 +74,23 @@ class CalculatorController extends Controller
         $karbo = $kalori * 0.55 / 4; // 55% dari kalori
         $protein = $kalori * 0.15 / 4; // 15% dari kalori
         $lemak = $kalori * 0.30 / 9; // 30% dari kalori
+
+        if (Auth::check()) {
+            CalculationLog::create([
+                'user_id' => Auth::id(),
+                'input' => $request->only(['gender', 'usia', 'berat', 'tinggi', 'aktivitas']),
+                'result' => [
+                    'kalori' => round($kalori),
+                    'bmi' => round($bmi, 1),
+                    'kategoriBmi' => $kategoriBmi,
+                    'karbo' => round($karbo),
+                    'protein' => round($protein),
+                    'lemak' => round($lemak),
+                ],
+                'calculated_at' => now(),
+            ]);
+        }
+
 
         return view('app.calculator', compact('kalori', 'bmi', 'kategoriBmi', 'karbo', 'protein', 'lemak'));
     }

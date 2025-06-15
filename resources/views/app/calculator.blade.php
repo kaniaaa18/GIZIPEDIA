@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Index - Strategy Bootstrap Template</title>
+    <title>GIZIPEDIA</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -86,7 +86,7 @@
         </div>
     </header>
 
-    <div>
+    <div class="mt-5">
         <div class="max-w-2xl mx-auto mt-10 bg-white p-6 rounded-2xl shadow-md border-2 border-gray-200">
             <h2 class="text-center text-xl font-bold text-red-700 mb-6 uppercase">Kalkulator Gizi Harian</h2>
 
@@ -143,39 +143,19 @@
 
                 <!-- Tombol Hitung -->
                 <div class="text-center">
-                    <button type="submit"
-                        class="bg-red-600 text-white font-bold px-6 py-2 rounded-full hover:bg-red-700 transition">
-                        HITUNG
-                    </button>
+                    <a href="#hasil">
+                        <button type="submit"
+                            class="bg-red-600 text-white font-bold px-6 py-2 rounded-full hover:bg-red-700 transition">
+                            HITUNG
+                        </button>
+                    </a>
                 </div>
             </form>
 
-            <!-- Hasil Perhitungan -->
-            @isset($kalori)
-                <div class="max-w-2xl mx-auto mt-10 bg-white p-6 rounded-2xl shadow-md border-2 border-gray-200">
-                    <h2 class="text-center text-xl font-bold text-green-700 mb-6 uppercase">Hasil Perhitungan Gizi</h2>
-
-                    <div class="space-y-2">
-                        <p><strong>Total Kalori Harian:</strong> {{ round($kalori) }} kcal</p>
-                        <p><strong>Indeks Massa Tubuh (BMI):</strong> {{ round($bmi, 2) }} ({{ $kategoriBmi }})</p>
-                        <p><strong>Rekomendasi Asupan Harian:</strong></p>
-                        <ul class="list-disc list-inside pl-4">
-                            <li>Karbohidrat: {{ round($karbo) }} gram</li>
-                            <li>Protein: {{ round($protein) }} gram</li>
-                            <li>Lemak: {{ round($lemak) }} gram</li>
-                        </ul>
-                    </div>
-
-                    <div class="text-center mt-6">
-                        <a href="{{ route('kalkulator.index') }}" class="text-red-600 hover:underline">Kembali ke
-                            Kalkulator</a>
-                    </div>
-                </div>
-            @endisset
-
         </div>
 
-        <div class="max-w-2xl mx-auto mt-10 bg-white p-6 rounded-2xl shadow-md border-2 border-gray-200">
+        <!-- Hasil Perhitungan -->
+        <div class="hasil max-w-2xl mx-auto mt-10 bg-white p-6 rounded-2xl shadow-md border-2 border-gray-200">
             <h2 class="text-center text-xl font-bold text-green-700 mb-6 uppercase">Hasil Perhitungan Gizi</h2>
 
             <div class="space-y-2">

@@ -7,6 +7,7 @@ use Filament\Tables;
 use App\Models\Category;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
+use Illuminate\Support\Str;
 use Filament\Resources\Resource;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
@@ -23,9 +24,20 @@ class CategoryResource extends Resource
 
     public static function form(Form $form): Form
     {
-        return $form
+       return $form
             ->schema([
-                TextInput::make('name'),
+                TextInput::make('name')
+                    ->required()
+                    ->live(onBlur: true) // agar perubahan langsung memicu update slug
+                    ->afterStateUpdated(fn ($state, callable $set) =>
+                        $set('slug', Str::slug($state))
+                    ),
+
+                TextInput::make('slug')
+                    ->required()
+                    ->disabled() // tidak bisa diisi manual dari panel
+                    ->dehydrated() // tetap disimpan saat submit
+                    ->unique(ignoreRecord: true),
             ]);
     }
 
