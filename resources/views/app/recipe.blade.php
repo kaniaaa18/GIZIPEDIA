@@ -86,144 +86,151 @@
         </div>
     </header>
 
-    <!-- Team Section -->
-    <section id="team" class="team section light-background">
+    <!-- Recipe Section -->
+    <section id="recipes" class="recipes section light-background">
 
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-            <h2>Team</h2>
-            <div><span>Check Our</span> <span class="description-title">Team</span></div>
+            <h2>Resep</h2>
+            <div><span>Temukan Resep</span> <span class="description-title">yang Anda Inginkan</span></div>
         </div><!-- End Section Title -->
 
+        <!-- Search Bar -->
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="row gy-4">
-
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="team-member d-flex">
-                        <div class="member-img">
-                            <img src="/assets/img/person/person-m-7.webp" class="img-fluid" alt="" loading="lazy">
-                        </div>
-                        <div class="member-info flex-grow-1">
-                            <h4>Walter White</h4>
-                            <span>Chief Executive Officer</span>
-                            <p>Aliquam iure quaerat voluptatem praesentium possimus unde laudantium vel dolorum
-                                distinctio dire flow</p>
-                            <div class="social">
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-twitter-x"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                                <a href=""><i class="bi bi-youtube"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- End Team Member -->
-
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="team-member d-flex">
-                        <div class="member-img">
-                            <img src="/assets/img/person/person-f-8.webp" class="img-fluid" alt="" loading="lazy">
-                        </div>
-                        <div class="member-info flex-grow-1">
-                            <h4>Sarah Jhonson</h4>
-                            <span>Product Manager</span>
-                            <p>Labore ipsam sit consequatur exercitationem rerum laboriosam laudantium aut quod
-                                dolores exercitationem ut</p>
-                            <div class="social">
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-twitter-x"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                                <a href=""><i class="bi bi-youtube"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- End Team Member -->
-
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="team-member d-flex">
-                        <div class="member-img">
-                            <img src="/assets/img/person/person-m-6.webp" class="img-fluid" alt="" loading="lazy">
-                        </div>
-                        <div class="member-info flex-grow-1">
-                            <h4>William Anderson</h4>
-                            <span>CTO</span>
-                            <p>Illum minima ea autem doloremque ipsum quidem quas aspernatur modi ut praesentium vel
-                                tque sed facilis at qui</p>
-                            <div class="social">
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-twitter-x"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                                <a href=""><i class="bi bi-youtube"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- End Team Member -->
-
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="team-member d-flex">
-                        <div class="member-img">
-                            <img src="/assets/img/person/person-f-4.webp" class="img-fluid" alt="" loading="lazy">
-                        </div>
-                        <div class="member-info flex-grow-1">
-                            <h4>Amanda Jepson</h4>
-                            <span>Accountant</span>
-                            <p>Magni voluptatem accusamus assumenda cum nisi aut qui dolorem voluptate sed et veniam
-                                quasi quam consectetur</p>
-                            <div class="social">
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-twitter-x"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                                <a href=""><i class="bi bi-youtube"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- End Team Member -->
-
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
-                    <div class="team-member d-flex">
-                        <div class="member-img">
-                            <img src="/assets/img/person/person-m-12.webp" class="img-fluid" alt="" loading="lazy">
-                        </div>
-                        <div class="member-info flex-grow-1">
-                            <h4>Brian Doe</h4>
-                            <span>Marketing</span>
-                            <p>Qui consequuntur quos accusamus magnam quo est molestiae eius laboriosam sunt
-                                doloribus quia impedit laborum velit</p>
-                            <div class="social">
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-twitter-x"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                                <a href=""><i class="bi bi-youtube"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- End Team Member -->
-
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
-                    <div class="team-member d-flex">
-                        <div class="member-img">
-                            <img src="/assets/img/person/person-f-9.webp" class="img-fluid" alt="" loading="lazy">
-                        </div>
-                        <div class="member-info flex-grow-1">
-                            <h4>Josepha Palas</h4>
-                            <span>Operation</span>
-                            <p>Sint sint eveniet explicabo amet consequatur nesciunt error enim rerum earum et omnis
-                                fugit eligendi cupiditate vel</p>
-                            <div class="social">
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-twitter-x"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                                <a href=""><i class="bi bi-youtube"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- End Team Member -->
-
+            <div class="search-bar" style="margin-bottom: 40px;">
+                <input type="text" id="search" placeholder="Pencarian..." onkeyup="filterRecipes()">
             </div>
 
-        </div>
+            @auth
+                <div style="text-align: right; margin-bottom: 40px;">
+                    <a href="{{ route('recipes.create') }}" class="btn btn-tambah"
+                        style="padding: 8px 20px; font-size: 14px; background-color: #D14D29; color: white; border-radius: 8px; text-decoration: none;">
+                        Tambahkan Resep
+                    </a>
+                </div>
+            @endauth
 
-    </section><!-- /Team Section -->
+            <div class="container" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4" id="recipe-list">
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="recipe-item d-flex">
+                            <div class="recipe-img"
+                                style="flex-shrink: 0; width: 150px; height: 150px; overflow: hidden; border-radius: 8px;">
+                                <img src="assets/img/high-angle-sandwich-with-knife.jpg" class="img-fluid"
+                                    alt="Roti Biji-Bijian dengan Keju" loading="lazy"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="recipe-info flex-grow-1" style="margin-left: 15px;">
+                                <h4><a href="{{ url('/recipe/roti_biji_bijian') }}">Roti Biji-Bijian dengan Keju</a>
+                                </h4>
+                                <p style="margin-top: 10px;">Campur bahan, diamkan hingga mengembang, lalu panggang
+                                    selama
+                                    25-30 menit.</p>
+                            </div>
+                        </div>
+                    </div><!-- End Recipe Item -->
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="recipe-item d-flex">
+                            <div class="recipe-img"
+                                style="flex-shrink: 0; width: 150px; height: 150px; overflow: hidden; border-radius: 8px;">
+                                <img src="assets/img/delicious-goulash-ready-dinner.jpg" class="img-fluid"
+                                    alt="Sup Sayuran dengan Daging Sapi" loading="lazy"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="recipe-info flex-grow-1" style="margin-left: 15px;">
+                                <h4><a href="{{ url('/recipe/sup_sayuran') }}">Sup Sayuran dengan Daging Sapi</a></h4>
+                                <p style="margin-top: 10px;">Tumis daging, tambahkan sayuran, dan masak hingga mendidih.
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End Recipe Item -->
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="recipe-item d-flex">
+                            <div class="recipe-img"
+                                style="flex-shrink: 0; width: 150px; height: 150px; overflow: hidden; border-radius: 8px;">
+                                <img src="assets/img/lemon-plate-healthy-potato-slice.jpg" class="img-fluid"
+                                    alt="Ikan Salmon Bakar dengan Kentang" loading="lazy"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="recipe-info flex-grow-1" style="margin-left: 15px;">
+                                <h4><a href="{{ url('/recipe/ikan_salmon') }}">Ikan Salmon Bakar dengan Kentang</a></h4>
+                                <p style="margin-top: 10px;">Panggang salmon selama 15-20 menit dan sajikan dengan
+                                    kentang.
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End Recipe Item -->
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="recipe-item d-flex">
+                            <div class="recipe-img"
+                                style="flex-shrink: 0; width: 150px; height: 150px; overflow: hidden; border-radius: 8px;">
+                                <img src="assets/img/quinoa-salad-with-fruit.jpg" class="img-fluid"
+                                    alt="Salad Quinoa dengan Buah" loading="lazy"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="recipe-info flex-grow-1" style="margin-left: 15px;">
+                                <h4><a href="{{ url('/recipe/salad_quinoa') }}">Salad Quinoa dengan Buah</a></h4>
+                                <p style="margin-top: 10px;">Masak quinoa, campur dengan buah dan sajikan dingin.</p>
+                            </div>
+                        </div>
+                    </div><!-- End Recipe Item -->
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                        <div class="recipe-item d-flex">
+                            <div class="recipe-img"
+                                style="flex-shrink: 0; width: 150px; height: 150px; overflow: hidden; border-radius: 8px;">
+                                <img src="assets/img/roasted-chicken-with-vegetables.jpg" class="img-fluid"
+                                    alt="Ayam Panggang dengan Sayuran" loading="lazy"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="recipe-info flex-grow-1" style="margin-left: 15px;">
+                                <h4><a href="{{ url('/recipe/ayam_panggang') }}">Ayam Panggang dengan Sayuran</a></h4>
+                                <p style="margin-top: 10px;">Panaskan oven pada suhu 200°C. Lumuri ayam dengan bumbu dan
+                                    panggang selama 25-30 menit.</p>
+                            </div>
+                        </div>
+                    </div><!-- End Recipe Item -->
+
+                    @foreach ($recipes as $recipe)
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="recipe-item d-flex">
+                                <div class="recipe-img"
+                                    style="flex-shrink: 0; width: 150px; height: 150px; overflow: hidden; border-radius: 8px;">
+                                    <img src="{{ asset('storage/' . $recipe->image) }}" class="img-fluid" alt="{{ $recipe->title }}"
+                                        loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="recipe-info flex-grow-1" style="margin-left: 15px;">
+                                    <h4>{{ $recipe->title }}</h4>
+                                    <p style="margin-top: 10px;">
+                                        {{ \Illuminate\Support\Str::limit(strip_tags($recipe->steps), 100) }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+
+
+    </section><!-- /Recipe Section -->
+
+    <script>
+        function filterRecipes() {
+            const searchInput = document.getElementById('search').value.toLowerCase();
+            const recipeItems = document.querySelectorAll('.recipe-item');
+
+            recipeItems.forEach(item => {
+                const title = item.querySelector('h4').innerText.toLowerCase();
+                if (title.includes(searchInput)) {
+                    item.parentElement.style.display = "block";
+                } else {
+                    item.parentElement.style.display = "none";
+                }
+            });
+        }
+    </script>
 
     <footer id="footer" class="footer">
 
