@@ -9,7 +9,9 @@ use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
 use Filament\Forms\Components\Select;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Forms\Components\FileUpload;
 use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\FoodResource\Pages;
@@ -50,7 +52,21 @@ class FoodResource extends Resource
     {
         return $table
             ->columns([
-                //
+                TextColumn::make('name')
+                    ->searchable(),
+                TextColumn::make('unit')
+                    ->searchable(),
+                TextColumn::make('calories')
+                    ->searchable(),
+                TextColumn::make('protein')
+                    ->searchable(),
+                TextColumn::make('carbs')
+                    ->searchable(),
+                TextColumn::make('fat')
+                    ->searchable(),
+                ImageColumn::make('avatar')
+                    ->square(),
+                TextColumn::make('category')
             ])
             ->filters([
                 //

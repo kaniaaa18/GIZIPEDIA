@@ -11,6 +11,13 @@
                 <div class="p-6 text-gray-900">
                     {{ __("You're logged in!") }}
                 </div>
+
+                <div class="p-6 text-right">
+                    <a href="{{ url('/') }}"
+                       class="inline-block bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">
+                        Kembali ke Home
+                    </a>
+                </div>
             </div>
         </div>
     </div>

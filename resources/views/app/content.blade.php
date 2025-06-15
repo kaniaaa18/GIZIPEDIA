@@ -63,18 +63,18 @@
                 <div class="btn-auth">
                     @auth
                         <a href="{{ url('/dashboard') }}"
-                            class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] border-[#19140035] hover:border-[#1915014a] border text-[#1b1b18] dark:border-[#3E3E3A] dark:hover:border-[#62605b] rounded-sm text-sm leading-normal">
+                            class="inline-block px-5 py-1.5 border-[#19140035] hover:border-[#1915014a] border text-[#1b1b18] rounded-sm text-sm leading-normal">
                             Dashboard
                         </a>
                     @else
                         <a class="btn-login" href="{{ route('login') }}"
-                            class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] text-[#1b1b18] border border-transparent hover:border-[#19140035] dark:hover:border-[#3E3E3A] rounded-sm text-sm leading-normal">
+                            class="inline-block px-5 py-1.5 text-[#1b1b18] border border-transparent hover:border-[#19140035] rounded-sm text-sm leading-normal">
                             Log in
                         </a>
 
                         @if (Route::has('register'))
                             <a class="btn-register" href="{{ route('register') }}"
-                                class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] border-[#19140035] hover:border-[#1915014a] border text-[#1b1b18] dark:border-[#3E3E3A] dark:hover:border-[#62605b] rounded-sm text-sm leading-normal">
+                                class="inline-block px-5 py-1.5 border-[#19140035] hover:border-[#1915014a] border text-[#1b1b18] rounded-sm text-sm leading-normal">
                                 Register
                             </a>
                         @endif
@@ -85,170 +85,46 @@
         </div>
     </header>
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
+    <!-- Articles Section -->
+    <section id="articles" class="services section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-            <h2>Services</h2>
-            <div><span>Check Our</span> <span class="description-title">Services</span></div>
+            <h2>Artikel</h2>
+            <div><span>Temukan</span> <span class="description-title">Informasi Gizi</span></div>
         </div><!-- End Section Title -->
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="service-header">
-                <div class="row align-items-center">
-                    <div class="col-lg-8 col-md-12">
-                        <div class="service-intro">
-                            <h2 class="service-heading">
-                                <div>Innovative business</div>
-                                <div><span>performance solutions</span></div>
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="service-summary">
-                            <p>
-                                We integrate forward-thinking strategies, creative approaches, and state-of-the-art
-                                technologies to deliver exceptional customer experiences that drive growth and
-                                engage target markets.
-                            </p>
-                            <a href="services.html" class="service-btn">
-                                View All Services
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-card position-relative z-1">
-                        <div class="service-icon">
-                            <i class="bi bi-palette"></i>
-                        </div>
-                        <a href="service-details.html"
-                            class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                            <i class="bi bi-arrow-up-right"></i>
-                        </a>
-                        <h3>
-                            <a href="service-details.html">
-                                Creative <span>branding</span>
+                @foreach($articles as $article)
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="{{ $loop->index * 100 }}">
+                        <div class="service-card position-relative z-1">
+                            <div class="service-icon">
+                                <i class="bi bi-file-earmark-text"></i>
+                            </div>
+                            <a href="{{ route('app.content-article', $article) }}"
+                                class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                                <i class="bi bi-arrow-up-right"></i>
                             </a>
-                        </h3>
-                        <p>
-                            Nulla facilisi. Maecenas eget magna neque. Suspendisse potenti. Curabitur eleifend nisi
-                            non magna vulputate, vel condimentum libero tempus. Proin consectetur feugiat diam.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-card position-relative z-1">
-                        <div class="service-icon">
-                            <i class="bi bi-gem"></i>
+                            <h3>
+                                <a href="{{ route('app.content-article', $article) }}">
+                                    {{ Str::limit($article->title, 40) }}
+                                </a>
+                            </h3>
+                            <p>
+                                {{ Str::limit(strip_tags($article->excerpt ?? 'Baca artikel ini untuk informasi lengkap seputar gizi.'), 100) }}
+                            </p>
                         </div>
-                        <a href="service-details.html"
-                            class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                            <i class="bi bi-arrow-up-right"></i>
-                        </a>
-                        <h3>
-                            <a href="service-details.html">
-                                Design <span>systems</span>
-                            </a>
-                        </h3>
-                        <p>
-                            Praesent euismod varius tellus, vel bibendum nunc interdum at. Donec vehicula diam vel
-                            metus venenatis convallis. Aliquam erat volutpat. Etiam viverra magna sit amet.
-                        </p>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-card position-relative z-1">
-                        <div class="service-icon">
-                            <i class="bi bi-megaphone"></i>
-                        </div>
-                        <a href="service-details.html"
-                            class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                            <i class="bi bi-arrow-up-right"></i>
-                        </a>
-                        <h3>
-                            <a href="service-details.html">
-                                Marketing <span>strategies</span>
-                            </a>
-                        </h3>
-                        <p>
-                            Vivamus tempor velit id magna dictum, sed fermentum nisi faucibus. Integer nec pretium
-                            sapien. Fusce tincidunt ligula et purus consequat, ac pellentesque nulla eleifend.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-card position-relative z-1">
-                        <div class="service-icon">
-                            <i class="bi bi-code-slash"></i>
-                        </div>
-                        <a href="service-details.html"
-                            class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                            <i class="bi bi-arrow-up-right"></i>
-                        </a>
-                        <h3>
-                            <a href="service-details.html">
-                                Digital <span>platforms</span>
-                            </a>
-                        </h3>
-                        <p>
-                            Cras fermentum odio eu feugiat malesuada. Vestibulum ante ipsum primis in faucibus orci
-                            luctus et accumsan cursus. Morbi placerat nulla vel nunc viverra accumsan.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-card position-relative z-1">
-                        <div class="service-icon">
-                            <i class="bi bi-graph-up"></i>
-                        </div>
-                        <a href="service-details.html"
-                            class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                            <i class="bi bi-arrow-up-right"></i>
-                        </a>
-                        <h3>
-                            <a href="service-details.html">
-                                Growth <span>acceleration</span>
-                            </a>
-                        </h3>
-                        <p>
-                            Aenean vel augue vel nisi bibendum posuere. Phasellus in lacus quis urna sodales
-                            dignissim. Duis aliquam libero eget risus facilisis. Quisque eget libero vel nisl
-                            fringilla.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-card position-relative z-1">
-                        <div class="service-icon">
-                            <i class="bi bi-camera-video"></i>
-                        </div>
-                        <a href="service-details.html"
-                            class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                            <i class="bi bi-arrow-up-right"></i>
-                        </a>
-                        <h3>
-                            <a href="service-details.html">
-                                Media <span>solutions</span>
-                            </a>
-                        </h3>
-                        <p>
-                            Etiam efficitur lacus in diam finibus, nec ultrices est sagittis. Maecenas elementum
-                            magna sed risus faucibus, nec commodo purus facilisis. Vestibulum accumsan magna.
-                        </p>
-                    </div>
-                </div>
+                @endforeach
             </div>
 
+            <!-- Pagination (optional) -->
+            <div class="mt-5 d-flex justify-content-center">
+                {{ $articles->links() }}
+            </div>
         </div>
+    </section><!-- /Articles Section -->
 
-    </section><!-- /Services Section -->
 
     <footer id="footer" class="footer">
 
