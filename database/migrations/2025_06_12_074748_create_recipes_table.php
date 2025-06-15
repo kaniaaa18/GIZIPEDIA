@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('ingredients');
+            $table->text('tools')->nullable();
             $table->text('steps');
             $table->string('image')->nullable();
             $table->foreignId('user_id')->constrained('users')->cascadeOnDelete();
