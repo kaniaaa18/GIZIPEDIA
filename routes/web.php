@@ -37,15 +37,6 @@ Route::get('/content', function () {
 });
 
 
-Route::get('/food', function () {
-    return view('app.food');
-});
-
-Route::get('/forum', function () {
-    return view('app.forum');
-});
-
-
 Route::get('/calculator', [CalculatorController::class, 'index'])->name('kalkulator.index');
 Route::post('/calculator', [CalculatorController::class, 'hitung'])->name('kalkulator.hitung');
 
