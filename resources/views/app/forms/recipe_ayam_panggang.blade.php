@@ -84,6 +84,7 @@
 
         </div>
     </header>
+    
     <div class="recipe-detail container"
         style="border: 2px solid #ccc; border-radius: 8px; padding: 20px; margin-top: 130px;">
         <h2>Ayam Panggang dengan Sayuran</h2>

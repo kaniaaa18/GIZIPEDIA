@@ -85,57 +85,38 @@
         </div>
     </header>
 
-    <!-- Articles Section -->
-    <section id="articles" class="services section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Artikel</h2>
-            <div><span>Temukan</span> <span class="description-title">Informasi Gizi</span></div>
-            <img src="assets/img/content.jpg" alt="Hero Image" class="img-fluid mt-5" width="1500dp">
-        </div><!-- End Section Title -->
+    <div class="recipe-detail container"
+        style="border: 2px solid #ccc; border-radius: 8px; padding: 20px; margin-top: 130px;">
+        <h2>{{ $recipe->title }}</h2>
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-            @if(isset($articles) && $articles->count())
-                <div class="row justify-content-center">
-                    @foreach($articles as $article)
-                        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="{{ $loop->index * 100 }}">
-                            <div class="service-card position-relative z-1">
-                                <div class="service-icon">
-                                    <i class="bi bi-file-earmark-text"></i>
-                                </div>
-                                <a href="{{ route('app.content-article', $article) }}"
-                                    class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                                    <i class="bi bi-arrow-up-right"></i>
-                                </a>
-                                <h3>
-                                    <a href="{{ route('app.content-article', $article) }}">
-                                        {{ Str::limit($article->title, 100) }}
-                                    </a>
-                                </h3>
-                                <p>
-                                    {{ Str::limit(strip_tags($article->excerpt ?? 'Baca artikel ini untuk informasi lengkap seputar gizi.'), 100) }}
-                                </p>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
+        <h3>Bahan:</h3>
+        <ul>
+            @foreach (explode("\n", $recipe->ingredients) as $ingredient)
+                @if (trim($ingredient) !== '')
+                    <li>{{ $ingredient }}</li>
+                @endif
+            @endforeach
+        </ul>
 
-                <!-- Pagination -->
-                <div class="mt-4 d-flex justify-content-center">
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination pagination-sm">
-                            {{ $articles->links('pagination::bootstrap-4') }}
-                        </ul>
-                    </nav>
-                </div>
+        <h3>Alat:</h3>
+        <ul>
+            @foreach (explode("\n", $recipe->tools) as $tool)
+                @if (trim($tool) !== '')
+                    <li>{{ $tool }}</li>
+                @endif
+            @endforeach
+        </ul>
 
-            @else
-                <div class="text-center">
-                    <p>Tidak ada artikel yang tersedia saat ini.</p>
-                </div>
-            @endif
-        </div>
-    </section><!-- /Articles Section -->
+        <h3>Cara Membuat:</h3>
+        <ol>
+            @foreach (explode("\n", $recipe->steps) as $step)
+                @if (trim($step) !== '')
+                    <li>{{ $step }}</li>
+                @endif
+            @endforeach
+        </ol>
+    </div>
+
 
     <footer id="footer" class="footer">
 

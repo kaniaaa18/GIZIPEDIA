@@ -15,7 +15,7 @@ class ArticleLog extends Model
         'viewed_at',
     ];
 
-    public $timestamps = false;
+    // public $timestamps = false;
 
     protected $dates = ['viewed_at'];
 

@@ -196,19 +196,22 @@
 
                     @foreach ($recipes as $recipe)
                         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                            <div class="recipe-item d-flex">
-                                <div class="recipe-img"
-                                    style="flex-shrink: 0; width: 150px; height: 150px; overflow: hidden; border-radius: 8px;">
-                                    <img src="{{ asset('storage/' . $recipe->image) }}" class="img-fluid" alt="{{ $recipe->title }}"
-                                        loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+                            <a href="{{ route('recipes.show', $recipe->id) }}">
+                                <div class="recipe-item d-flex">
+                                    <div class="recipe-img"
+                                        style="flex-shrink: 0; width: 150px; height: 150px; overflow: hidden; border-radius: 8px;">
+                                        <img src="{{ asset('storage/' . $recipe->image) }}" class="img-fluid"
+                                            alt="{{ $recipe->title }}" loading="lazy"
+                                            style="width: 100%; height: 100%; object-fit: cover;">
+                                    </div>
+                                    <div class="recipe-info flex-grow-1" style="margin-left: 15px;">
+                                        <h4>{{ $recipe->title }}</h4>
+                                        <p style="margin-top: 10px;">
+                                            {{ \Illuminate\Support\Str::limit(strip_tags($recipe->steps), 100) }}
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="recipe-info flex-grow-1" style="margin-left: 15px;">
-                                    <h4>{{ $recipe->title }}</h4>
-                                    <p style="margin-top: 10px;">
-                                        {{ \Illuminate\Support\Str::limit(strip_tags($recipe->steps), 100) }}
-                                    </p>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                     @endforeach
 

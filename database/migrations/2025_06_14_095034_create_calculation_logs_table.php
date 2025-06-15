@@ -18,6 +18,8 @@ return new class extends Migration
             $table->json('input'); // data input kalkulasi
             $table->json('result'); // hasil kalkulasi
             $table->timestamp('calculated_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamps();
+
         });
     }
 

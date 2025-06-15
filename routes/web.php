@@ -2,11 +2,11 @@
 
 use App\Models\Article;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RecipeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Web\FoodController;
 use App\Http\Controllers\Web\ForumController;
 use App\Http\Controllers\CalculatorController;
-use App\Http\Controllers\RecipeController;
 use App\Http\Controllers\Web\ArticleController;
 
 Route::get('/', function () {
@@ -20,23 +20,21 @@ Route::get('/about', function () {
 Route::get('/content', [ArticleController::class, 'index'])->name('app.content');
 Route::get('/content/{article:slug}', [ArticleController::class, 'show'])->name('app.content-article');
 
-
 Route::get('/food', [FoodController::class, 'index']);
 Route::get('/food/category/{slug}', [FoodController::class, 'showByCategory'])->name('food-category');
-
 
 Route::get('/forum', [ForumController::class, 'index'])->name('forum.index');
 Route::post('/forum', [ForumController::class, 'store'])->name('forum.store');
 Route::post('/forum/{id}/answer', [ForumController::class, 'storeAnswer'])->name('forum.answer');
 
-Route::get('/recipe', [RecipeController::class, 'index']);
-Route::get('/recipe/{slug}', [RecipeController::class, 'show']);
-Route::middleware(['auth'])->group(function () {
-    Route::get('/recipes/create', [RecipeController::class, 'create'])->name('recipes.create');
-    Route::post('/recipes', [RecipeController::class, 'store'])->name('recipe.store');
-    Route::post('/recipe', [RecipeController::class, 'index'])->name('recipes.index');
-});
+Route::get('/recipe', [RecipeController::class, 'index'])->name('recipe.index');
+Route::get('/recipes/{id}', [RecipeController::class, 'show'])->name('recipes.show');
 
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/recipe/create', [RecipeController::class, 'create'])->name('recipes.create');
+    Route::post('/recipe', [RecipeController::class, 'store'])->name('recipe.store');
+});
 
 Route::get('/calculator', [CalculatorController::class, 'index'])->name('kalkulator.index');
 Route::post('/calculator', [CalculatorController::class, 'hitung'])->name('kalkulator.hitung');

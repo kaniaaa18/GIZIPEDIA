@@ -86,90 +86,95 @@
         </div>
     </header>
 
-    <div class="mt-5">
-        <div class="max-w-2xl mx-auto mt-10 bg-white p-6 rounded-2xl shadow-md border-2 border-gray-200">
-            <h2 class="text-center text-xl font-bold text-red-700 mb-6 uppercase">Kalkulator Gizi Harian</h2>
+    <section>
+        <div class="mt-5">
+            <div class="max-w-2xl mx-auto mt-10 bg-white p-6 rounded-2xl shadow-md border-2 border-gray-200">
+                <h2 class="text-center text-xl font-bold text-red-700 mb-6 uppercase">Kalkulator Gizi Harian</h2>
 
-            <form method="POST" action="{{ route('kalkulator.hitung') }}">
-                @csrf
+                <form method="POST" action="{{ route('kalkulator.hitung') }}">
+                    @csrf
 
-                <!-- Jenis Kelamin -->
-                <div class="mb-4">
-                    <label class="block text-sm font-semibold text-red-700 mb-1">Jenis Kelamin</label>
-                    <div class="flex items-center gap-6">
-                        <label class="inline-flex items-center">
-                            <input type="radio" name="gender" value="Laki-laki" class="text-red-600 focus:ring-red-500">
-                            <span class="ml-2">Laki-laki</span>
-                        </label>
-                        <label class="inline-flex items-center">
-                            <input type="radio" name="gender" value="Perempuan" class="text-red-600 focus:ring-red-500">
-                            <span class="ml-2">Perempuan</span>
-                        </label>
+                    <!-- Jenis Kelamin -->
+                    <div class="mb-4">
+                        <label class="block text-sm font-semibold text-red-700 mb-1">Jenis Kelamin</label>
+                        <div class="flex items-center gap-6">
+                            <label class="inline-flex items-center">
+                                <input type="radio" name="gender" value="Laki-laki"
+                                    class="text-red-600 focus:ring-red-500">
+                                <span class="ml-2">Laki-laki</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <input type="radio" name="gender" value="Perempuan"
+                                    class="text-red-600 focus:ring-red-500">
+                                <span class="ml-2">Perempuan</span>
+                            </label>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Usia -->
-                <div class="mb-4">
-                    <label for="usia" class="block text-sm font-semibold text-red-700 mb-1">Usia</label>
-                    <input type="number" name="usia" id="usia" class="w-32 border border-gray-300 rounded px-2 py-1"
-                        placeholder="Tahun" required>
-                </div>
+                    <!-- Usia -->
+                    <div class="mb-4">
+                        <label for="usia" class="block text-sm font-semibold text-red-700 mb-1">Usia</label>
+                        <input type="number" name="usia" id="usia" class="w-32 border border-gray-300 rounded px-2 py-1"
+                            placeholder="Tahun" required>
+                    </div>
 
-                <!-- Berat Badan -->
-                <div class="mb-4">
-                    <label for="berat" class="block text-sm font-semibold text-red-700 mb-1">Berat Badan</label>
-                    <input type="number" name="berat" id="berat" class="w-32 border border-gray-300 rounded px-2 py-1"
-                        placeholder="Kg" required>
-                </div>
+                    <!-- Berat Badan -->
+                    <div class="mb-4">
+                        <label for="berat" class="block text-sm font-semibold text-red-700 mb-1">Berat Badan</label>
+                        <input type="number" name="berat" id="berat"
+                            class="w-32 border border-gray-300 rounded px-2 py-1" placeholder="Kg" required>
+                    </div>
 
-                <!-- Tinggi Badan -->
-                <div class="mb-4">
-                    <label for="tinggi" class="block text-sm font-semibold text-red-700 mb-1">Tinggi Badan</label>
-                    <input type="number" name="tinggi" id="tinggi" class="w-32 border border-gray-300 rounded px-2 py-1"
-                        placeholder="Cm" required>
-                </div>
+                    <!-- Tinggi Badan -->
+                    <div class="mb-4">
+                        <label for="tinggi" class="block text-sm font-semibold text-red-700 mb-1">Tinggi Badan</label>
+                        <input type="number" name="tinggi" id="tinggi"
+                            class="w-32 border border-gray-300 rounded px-2 py-1" placeholder="Cm" required>
+                    </div>
 
-                <!-- Aktivitas Fisik -->
-                <div class="mb-6">
-                    <label for="aktivitas" class="block text-sm font-semibold text-red-700 mb-1">Tingkat Aktivitas
-                        Fisik</label>
-                    <select name="aktivitas" id="aktivitas" class="w-48 border border-gray-300 rounded px-2 py-1">
-                        <option value="sedentari">Sedentari</option>
-                        <option value="ringan">Ringan</option>
-                        <option value="sedang">Sedang</option>
-                        <option value="berat">Berat</option>
-                    </select>
-                </div>
+                    <!-- Aktivitas Fisik -->
+                    <div class="mb-6">
+                        <label for="aktivitas" class="block text-sm font-semibold text-red-700 mb-1">Tingkat Aktivitas
+                            Fisik</label>
+                        <select name="aktivitas" id="aktivitas" class="w-48 border border-gray-300 rounded px-2 py-1">
+                            <option value="sedentari">Sedentari</option>
+                            <option value="ringan">Ringan</option>
+                            <option value="sedang">Sedang</option>
+                            <option value="berat">Berat</option>
+                        </select>
+                    </div>
 
-                <!-- Tombol Hitung -->
-                <div class="text-center">
-                    <a href="#hasil">
-                        <button type="submit"
-                            class="bg-red-600 text-white font-bold px-6 py-2 rounded-full hover:bg-red-700 transition">
-                            HITUNG
-                        </button>
-                    </a>
-                </div>
-            </form>
+                    <!-- Tombol Hitung -->
+                    <div class="text-center">
+                        <a href="#hasil">
+                            <button type="submit"
+                                class="bg-red-600 text-white font-bold px-6 py-2 rounded-full hover:bg-red-700 transition">
+                                HITUNG
+                            </button>
+                        </a>
+                    </div>
+                </form>
 
-        </div>
-
-        <!-- Hasil Perhitungan -->
-        <div class="hasil max-w-2xl mx-auto mt-10 bg-white p-6 rounded-2xl shadow-md border-2 border-gray-200">
-            <h2 class="text-center text-xl font-bold text-green-700 mb-6 uppercase">Hasil Perhitungan Gizi</h2>
-
-            <div class="space-y-2">
-                <p><strong>Total Kalori Harian:</strong> {{ $kalori }} kcal</p>
-                <p><strong>Indeks Massa Tubuh (BMI):</strong> {{ $bmi }} ({{ $kategoriBmi }})</p>
-                <p><strong>Rekomendasi Asupan Harian:</strong></p>
-                <ul class="list-disc list-inside pl-4">
-                    <li>Karbohidrat: {{ $karbo }} gram</li>
-                    <li>Protein: {{ $protein }} gram</li>
-                    <li>Lemak: {{ $lemak }} gram</li>
-                </ul>
             </div>
-
         </div>
+    </section>
+
+    <!-- Hasil Perhitungan -->
+    <div class="hasil max-w-2xl mx-auto mt-10 bg-white p-6 rounded-2xl shadow-md border-2 border-gray-200">
+        <h2 class="text-center text-xl font-bold text-green-700 mb-6 uppercase">Hasil Perhitungan Gizi</h2>
+
+        <div class="space-y-2">
+            <p><strong>Total Kalori Harian:</strong> {{ $kalori }} kcal</p>
+            <p><strong>Indeks Massa Tubuh (BMI):</strong> {{ $bmi }} ({{ $kategoriBmi }})</p>
+            <p><strong>Rekomendasi Asupan Harian:</strong></p>
+            <ul class="list-disc list-inside pl-4">
+                <li>Karbohidrat: {{ $karbo }} gram</li>
+                <li>Protein: {{ $protein }} gram</li>
+                <li>Lemak: {{ $lemak }} gram</li>
+            </ul>
+        </div>
+
+    </div>
 
     </div>
 

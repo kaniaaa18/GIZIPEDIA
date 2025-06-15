@@ -58,7 +58,7 @@ class RecipeController extends Controller
         ]);
 
         // Redirect ke halaman resep
-        return redirect()->route('recipes.index')->with('success', 'Resep berhasil disimpan.');
+        return redirect()->route('recipe.index')->with('success', 'Resep berhasil disimpan.');
     }
 
 
@@ -66,6 +66,12 @@ class RecipeController extends Controller
     {
         $recipes = Recipe::latest()->get();
         return view('app.recipe', compact('recipes'));
+    }
+
+    public function show($id)
+    {
+        $recipe = Recipe::findOrFail($id);
+        return view('app.forms.recipeShow', compact('recipe'));
     }
 
     public function ayamPanggang()
