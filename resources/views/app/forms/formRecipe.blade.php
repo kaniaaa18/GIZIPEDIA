@@ -60,7 +60,7 @@
             <div class="alert alert-success">{{ session('success') }}</div>
         @endif
 
-        <form action="{{ route('recipes.store') }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('recipe.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
 
             <div class="mb-3">
@@ -89,7 +89,7 @@
             </div>
 
             <div class="d-flex justify-content-end">
-                <a href="{{ route('recipes.index') }}" class="btn btn-secondary">Kembali</a>
+                <a href="{{ route('recipe.index') }}" class="btn btn-secondary">Kembali</a>
                 <button type="submit" class="btn btn-custom">Simpan Resep</button>
             </div>
         </form>

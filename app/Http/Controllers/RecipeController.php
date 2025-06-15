@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Recipe;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
@@ -51,6 +53,7 @@ class RecipeController extends Controller
             'tools' => $request->tools,
             'steps' => $request->steps,
             'image' => $imagePath,
+            'slug' => Str::slug($request->title),
             'user_id' => Auth::id(),
         ]);
 

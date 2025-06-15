@@ -6,7 +6,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Web\FoodController;
 use App\Http\Controllers\Web\ForumController;
 use App\Http\Controllers\CalculatorController;
-use App\Http\Controllers\Web\RecipeController;
+use App\Http\Controllers\RecipeController;
 use App\Http\Controllers\Web\ArticleController;
 
 Route::get('/', function () {
@@ -31,6 +31,11 @@ Route::post('/forum/{id}/answer', [ForumController::class, 'storeAnswer'])->name
 
 Route::get('/recipe', [RecipeController::class, 'index']);
 Route::get('/recipe/{slug}', [RecipeController::class, 'show']);
+Route::middleware(['auth'])->group(function () {
+    Route::get('/recipes/create', [RecipeController::class, 'create'])->name('recipes.create');
+    Route::post('/recipes', [RecipeController::class, 'store'])->name('recipe.store');
+    Route::post('/recipe', [RecipeController::class, 'index'])->name('recipes.index');
+});
 
 
 Route::get('/calculator', [CalculatorController::class, 'index'])->name('kalkulator.index');
