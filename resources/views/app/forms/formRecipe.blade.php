@@ -8,6 +8,11 @@
     </div>
 @endif
 
+@php
+    $isEdit = isset($recipe);
+@endphp
+
+
 <!DOCTYPE html>
 <html lang="id">
 
@@ -60,31 +65,45 @@
             <div class="alert alert-success">{{ session('success') }}</div>
         @endif
 
-        <form action="{{ route('recipe.store') }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ $isEdit ? route('recipes.update', $recipe->id) : route('recipe.store') }}" method="POST"
+            enctype="multipart/form-data">
             @csrf
+            @if(isset($recipe))
+                @method('PUT')
+            @endif
 
             <div class="mb-3">
                 <label for="title" class="form-label">Judul Resep</label>
-                <input type="text" name="title" id="title" class="form-control" required>
+                <input type="text" name="title" id="title" class="form-control"
+                    value="{{ old('title', $recipe->title ?? '') }}" required>
             </div>
 
             <div class="mb-3">
                 <label for="ingredients" class="form-label">Bahan-bahan</label>
-                <textarea name="ingredients" id="ingredients" rows="4" class="form-control" required></textarea>
+                <textarea name="ingredients" id="ingredients" rows="4" class="form-control"
+                    required>{{ old('ingredients', $recipe->ingredients ?? '') }}</textarea>
             </div>
 
             <div class="mb-3">
                 <label for="tools" class="form-label">Alat Memasak</label>
-                <textarea name="tools" id="tools" rows="3" class="form-control" required></textarea>
+                <textarea name="tools" id="tools" rows="3" class="form-control"
+                    required>{{ old('tools', $recipe->tools ?? '') }}</textarea>
             </div>
 
             <div class="mb-3">
                 <label for="steps" class="form-label">Cara Membuat</label>
-                <textarea name="steps" id="steps" rows="4" class="form-control" required></textarea>
+                <textarea name="steps" id="steps" rows="4" class="form-control"
+                    required>{{ old('steps', $recipe->steps ?? '') }}</textarea>
             </div>
 
             <div class="mb-3">
                 <label for="image" class="form-label">Foto Masakan (Opsional)</label>
+                @if($isEdit && $recipe->image)
+                    <div class="mb-3">
+                        <img src="{{ asset('storage/' . $recipe->image) }}" alt="Gambar Resep"
+                            class="w-32 h-32 object-cover">
+                    </div>
+                @endif
                 <input type="file" name="image" id="image" class="form-control" accept="image/*">
             </div>
 

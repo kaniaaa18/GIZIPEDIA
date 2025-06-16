@@ -74,6 +74,51 @@ class RecipeController extends Controller
         return view('app.forms.recipeShow', compact('recipe'));
     }
 
+    public function edit($id)
+    {
+        $recipe = Recipe::findOrFail($id);
+
+        if ($recipe->user_id !== Auth::id()) {
+            abort(403, 'Anda tidak memiliki izin untuk mengedit resep ini.');
+        }
+
+        return view('app.forms.formRecipe', compact('recipe'));
+    }
+
+
+    public function update(Request $request, $id)
+    {
+        $recipe = Recipe::findOrFail($id);
+
+        if ($recipe->user_id !== Auth::id()) {
+            abort(403, 'Anda tidak memiliki izin untuk memperbarui resep ini.');
+        }
+
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'ingredients' => 'required|string',
+            'tools' => 'nullable|string',
+            'steps' => 'required|string',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+        ]);
+
+        // update data
+        $recipe->title = $request->title;
+        $recipe->ingredients = $request->ingredients;
+        $recipe->tools = $request->tools;
+        $recipe->steps = $request->steps;
+
+        if ($request->hasFile('image')) {
+            $path = $request->file('image')->store('recipes', 'public');
+            $recipe->image = $path;
+        }
+
+        $recipe->save();
+
+        return redirect()->route('dashboard')->with('success', 'Resep berhasil diperbarui.');
+    }
+
+
     public function ayamPanggang()
     {
         return view('app.forms.recipe_ayam_panggang');

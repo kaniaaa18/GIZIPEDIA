@@ -72,6 +72,54 @@
                     </ul>
                 </div>
 
+                {{-- Riwayat Resep yang Ditambahkan --}}
+                <div class="p-6 mt-6 border-t">
+                    <h3 class="text-lg font-semibold mb-2">Riwayat Resep yang Ditambahkan</h3>
+                    <ul class="space-y-4">
+                        @foreach(Auth::user()->recipes()->latest()->take(5)->get() as $recipe)
+                            <li class="border p-4 rounded-md shadow-sm bg-gray-50">
+                                <div class="mb-2">
+                                    <strong class="block text-gray-700">Judul:</strong>
+                                    <p class="text-sm text-gray-800 ml-4">{{ $recipe->title }}</p>
+                                </div>
+
+                                <div class="mb-2">
+                                    <strong class="block text-gray-700">Bahan:</strong>
+                                    <ul class="ml-4 list-disc text-sm text-gray-800">
+                                        @foreach(explode("\n", $recipe->ingredients) as $ingredient)
+                                            <li>{{ trim($ingredient) }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+
+                                <div class="mb-2">
+                                    <strong class="block text-gray-700">Alat:</strong>
+                                    <ul class="ml-4 list-disc text-sm text-gray-800">
+                                        @foreach(explode("\n", $recipe->tools) as $tool)
+                                            <li>{{ trim($tool) }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+
+                                <div class="mb-2">
+                                    <strong class="block text-gray-700">Langkah Pembuatan:</strong>
+                                    <p class="text-sm text-gray-800 ml-4">
+                                        {!! \Illuminate\Support\Str::limit(strip_tags($recipe->steps), 150) !!}
+                                    </p>
+                                </div>
+
+                                <div class="flex justify-between items-center mt-2">
+                                    <small class="text-gray-500">Ditambahkan
+                                        {{ $recipe->created_at->diffForHumans() }}</small>
+                                    <a href="{{ route('recipes.edit', $recipe->id) }}"
+                                        class="text-blue-600 hover:underline text-sm">Edit</a>
+                                </div>
+                            </li>
+                        @endforeach
+                    </ul>
+                </div>
+
+
             </div>
         </div>
     </div>

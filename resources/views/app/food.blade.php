@@ -110,7 +110,8 @@
                                         <div class="entry-links">
                                             <a href="/assets/img/raw-beef-meat.jpg" class="glightbox"
                                                 data-gallery="portfolio-gallery-ui"
-                                                data-glightbox="title: Daging; description: Daging merah seperti sapi dan kambing merupakan sumber protein hewani yang kaya zat besi, seng, dan vitamin B12. Konsumsi dalam jumlah seimbang membantu pembentukan otot dan mendukung kesehatan darah.">
+                                                data-glightbox="title: Daging; description: Daging merah seperti sapi dan kambing merupakan sumber protein hewani yang kaya zat besi, seng, dan vitamin B12. 
+                                                Konsumsi dalam jumlah seimbang membantu pembentukan otot dan mendukung kesehatan darah.">
                                                 <i class="bi bi-arrows-angle-expand"></i>
                                             </a>
                                             <a href="{{ route('food-category', 'daging') }}">
@@ -313,10 +314,10 @@
                     <p>Investasi terbaik untuk tubuhmu dimulai dari piringmu! Pilih makanan bergizi hari ini untuk
                         energi dan kesehatan jangka panjang.</p>
                     <div class="social-links d-flex mt-4">
-                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href="https://x.com/zyuuwy?t=ALZvMAtwuLwZW5XPjrOC5Q&s=09"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.facebook.com/share/16bWmJa4SA/"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/gizipedia_3code?igsh=bXcwd25lemJ5M2Nn"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/alya-kania-7263a3306/"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
 

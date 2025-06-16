@@ -132,7 +132,6 @@
                     </div>
                 </div>
             </div>
-            </div>
         </section><!-- /Hero Section -->
 
         <!-- About Section -->
@@ -230,155 +229,51 @@
 
                 </div>
 
-                <div class="testimonial-section mt-5 pt-5" data-aos="fade-up" data-aos-delay="100">
-                    <div class="row">
-                        <div class="col-lg-4" data-aos="fade-right" data-aos-delay="200">
-                            <div class="testimonial-intro">
-                                <h3>Testimoni Pengguna</h3>
-                                <p>Bukti nyata dari ribuan pengguna yang telah menemukan solusi kesehatan berbasis ilmu
-                                    gizi yang tepat.</p>
-                                <div class="swiper-nav-buttons mt-4">
-                                    <button class="slider-prev"><i class="bi bi-arrow-left"></i></button>
-                                    <button class="slider-next"><i class="bi bi-arrow-right"></i></button>
+
+                <!-- Content Section -->
+                <section id="services" class="services section">
+
+                    <!-- Section Title -->
+                    <div class="container section-title" data-aos="fade-up">
+                        <h2>Konten</h2>
+                        <div><span>Artikel</span></div>
+                    </div><!-- End Section Title -->
+
+                    <div class="container" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-header">
+                            <div class="row align-items-center">
+
+                                <!-- Kiri -->
+                                <div class="col-lg-8 col-md-12">
+                                    <div class="service-intro">
+                                        <h2 class="service-heading">
+                                            <div>Temukan informasi</div>
+                                            <div><span>bergizi dan inspiratif</span></div>
+                                        </h2>
+                                        <p class="mt-3">
+                                            Mulai hari dengan pengetahuan yang sehat dan bermanfaat.
+                                            Jelajahi artikel-artikel terbaru seputar gizi, kesehatan, dan gaya hidup
+                                            seimbang
+                                            hanya di GIZIPEDIA.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div class="col-lg-8" data-aos="fade-left" data-aos-delay="300">
-                            <div class="testimonial-slider swiper init-swiper">
-                                <script type="application/json" class="swiper-config">
-                  {
-                    "loop": true,
-                    "speed": 800,
-                    "autoplay": {
-                      "delay": 5000
-                    },
-                    "slidesPerView": 1,
-                    "spaceBetween": 30,
-                    "navigation": {
-                      "nextEl": ".slider-next",
-                      "prevEl": ".slider-prev"
-                    },
-                    "breakpoints": {
-                      "768": {
-                        "slidesPerView": 2
-                      }
-                    }
-                  }
-                </script>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="testimonial-item">
-                                            <p>"Berkat Gizipedia, saya akhirnya memahami mengapa program diet sebelumnya
-                                                tidak bekerja.
-                                                Sekarang saya bisa menurunkan berat badan dengan cara yang sehat."</p>
-                                            <div class="client-info d-flex align-items-center mt-4">
-                                                <img src="/assets/img/person/person.png" class="client-img" alt="Client"
-                                                    loading="lazy">
-                                                <div>
-                                                    <h6 class="mb-0">Gege Pranajaya</h6>
-                                                    <span>2025</span>
-                                                </div>
-                                            </div>
-                                        </div>
+                                <!-- Kanan -->
+                                <div class="col-lg-4 col-md-12">
+                                    <div class="service-summary text-lg-end mt-4 mt-lg-0">
+                                        <a href="{{ route('app.content') }}" class="service-btn">
+                                            Lihat Semua Artikel
+                                            <i class="bi bi-arrow-right"></i>
+                                        </a>
                                     </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="testimonial-item">
-                                            <p>"Forum ini sangat membantu dengan jawaban dari profesional. Tidak seperti
-                                                platform lain yang penuh dengan informasi tidak akurat."</p>
-                                            <div class="client-info d-flex align-items-center mt-4">
-                                                <img src="/assets/img/person/person.png" class="client-img" alt="Client"
-                                                    loading="lazy">
-                                                <div>
-                                                    <h6 class="mb-0">Haikal Fernandez</h6>
-                                                    <span>2025</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="testimonial-item">
-                                            <p>"Saya suka bisa bertanya secara anonim tentang masalah sensitif. Tim ahli
-                                                di sini sangat membantu dan tidak menghakimi."</p>
-                                            <div class="client-info d-flex align-items-center mt-4">
-                                                <img src="/assets/img/person/person.png" class="client-img" alt="Client"
-                                                    loading="lazy">
-                                                <div>
-                                                    <span>2024</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="testimonial-item">
-                                            <p>"Sistem anonimnya membuat saya nyaman bertanya tentang masalah sensitif.
-                                                Terima kasih Gizipedia!"</p>
-                                            <div class="client-info d-flex align-items-center mt-4">
-                                                <img src="/assets/img/person/person.png" class="client-img" alt="Client"
-                                                    loading="lazy">
-                                                <div>
-                                                    <span>2025</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                 </div>
+
                             </div>
                         </div>
                     </div>
-                </div>
 
-            </div>
-
-        </section><!-- /About Section -->
-
-        <!-- Content Section -->
-        <section id="services" class="services section">
-
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Konten</h2>
-                <div><span>Artikel</span></div>
-            </div><!-- End Section Title -->
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-header">
-                    <div class="row align-items-center">
-
-                        <!-- Kiri -->
-                        <div class="col-lg-8 col-md-12">
-                            <div class="service-intro">
-                                <h2 class="service-heading">
-                                    <div>Temukan informasi</div>
-                                    <div><span>bergizi dan inspiratif</span></div>
-                                </h2>
-                                <p class="mt-3">
-                                    Mulai hari dengan pengetahuan yang sehat dan bermanfaat.
-                                    Jelajahi artikel-artikel terbaru seputar gizi, kesehatan, dan gaya hidup seimbang
-                                    hanya di GIZIPEDIA.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Kanan -->
-                        <div class="col-lg-4 col-md-12">
-                            <div class="service-summary text-lg-end mt-4 mt-lg-0">
-                                <a href="{{ route('app.content') }}" class="service-btn">
-                                    Lihat Semua Artikel
-                                    <i class="bi bi-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </section><!-- /Services Section -->
+                </section><!-- /Services Section -->
 
 
 
@@ -395,10 +290,11 @@
                     <p>Investasi terbaik untuk tubuhmu dimulai dari piringmu! Pilih makanan bergizi hari ini untuk
                         energi dan kesehatan jangka panjang.</p>
                     <div class="social-links d-flex mt-4">
-                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href="https://x.com/zyuuwy?t=ALZvMAtwuLwZW5XPjrOC5Q&s=09"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.facebook.com/share/16bWmJa4SA/"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/gizipedia_3code?igsh=bXcwd25lemJ5M2Nn"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/alya-kania-7263a3306/"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
 
