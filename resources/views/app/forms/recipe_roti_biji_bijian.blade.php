@@ -87,6 +87,9 @@
     <div class="recipe-detail container"
         style="border: 2px solid #ccc; border-radius: 8px; padding: 20px; margin-top: 130px;">
         <h2>Roti Biji-Bijian dengan Keju</h2>
+        <a href="{{ route('recipe.index') }}" class="btn-danger mb-4">
+            ← Kembali ke Resep
+        </a>
 
         <h3>Bahan:</h3>
         <ul>

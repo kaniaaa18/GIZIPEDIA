@@ -142,6 +142,12 @@
                             <option value="sedang">Sedang</option>
                             <option value="berat">Berat</option>
                         </select>
+                        <p class="small text-muted p-3">
+                            Sedentari: Tidak berolahraga dan aktivitas harian hanya duduk atau bergerak sangat minim. <br>
+                            Rendah: Aktivitas ringan sehari-hari dan olahraga ringan 1–3 kali seminggu. <br>
+                            Sedang: Aktivitas fisik cukup sering atau olahraga sedang 3–5 kali seminggu. <br>
+                            Berat: Aktivitas fisik intens setiap hari atau pekerjaan fisik berat. <br>
+                        </p>
                     </div>
 
                     <!-- Tombol Hitung -->
@@ -189,7 +195,8 @@
                     <div class="social-links d-flex mt-4">
                         <a href="https://x.com/zyuuwy?t=ALZvMAtwuLwZW5XPjrOC5Q&s=09"><i class="bi bi-twitter-x"></i></a>
                         <a href="https://www.facebook.com/share/16bWmJa4SA/"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.instagram.com/gizipedia_3code?igsh=bXcwd25lemJ5M2Nn"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.instagram.com/gizipedia_3code?igsh=bXcwd25lemJ5M2Nn"><i
+                                class="bi bi-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/alya-kania-7263a3306/"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>

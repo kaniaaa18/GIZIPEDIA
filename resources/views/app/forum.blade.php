@@ -121,7 +121,14 @@
                                                 <button class="btn btn-link p-0" onclick="toggleAnswers({{ $question->id }})">
                                                     {{ $question->comentars->count() }} Jawaban
                                                 </button>
-                                                <button class="like-button" onclick="toggleLike(this)">Suka</button>
+                                                <button class="btn btn-secondary btn-edit-question" data-id="{{ $question->id }}"
+                                                    data-question="{{ e($question->question) }}"
+                                                    data-name="{{ e($question->name) }}"
+                                                    data-anonim="{{ $question->is_anonim ? '1' : '0' }}">
+                                                    Edit
+                                                </button>
+
+
                                             </div>
                                         </div>
                                     </div>
@@ -169,8 +176,10 @@
                         </div>
                     @endif
 
-                    <form method="POST" action="{{ route('forum.store') }}">
+                    <form method="POST" id="question-form" action="{{ route('forum.store') }}">
                         @csrf
+                        <input type="hidden" name="_method" id="form-method" value="POST">
+                        <input type="hidden" name="question_id" id="question-id">
 
                         <!-- Checkbox Anonim -->
                         <div style="margin-bottom: 12px;">
@@ -193,14 +202,15 @@
                                 style="width: 100%; border: 1px solid #C4C4C4; padding: 6px 8px; font-size: 14px; border-radius: 4px;"></textarea>
                         </div>
 
-                        <!-- Tombol Kirim -->
-                        <div style="text-align: right;">
+                        <!-- Tombol Aksi -->
+                        <div style="text-align: right; display: flex; justify-content: space-between;">
                             <button type="submit"
                                 style="background-color: #A63A26; color: white; font-weight: bold; font-size: 12px; padding: 8px 24px; border: none; border-radius: 999px; cursor: pointer;">
                                 KIRIM
                             </button>
                         </div>
                     </form>
+
                 </div>
             </div>
         </div>
@@ -247,6 +257,35 @@
         }
     </script>
 
+    <script>
+        document.querySelectorAll('.btn-edit-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const id = button.getAttribute('data-id');
+                const question = button.getAttribute('data-question');
+                const name = button.getAttribute('data-name');
+                const isAnonim = button.getAttribute('data-anonim') === '1';
+
+                // Isi ulang form
+                document.getElementById('question-id').value = id;
+                document.getElementById('question').value = question;
+                document.getElementById('name').value = name || '';
+                document.getElementById('anonim').checked = isAnonim;
+
+                // Toggle input name jika anonim
+                toggleNameInput(document.getElementById('anonim'));
+
+                // Ubah form method dan action
+                document.getElementById('form-method').value = 'PUT';
+                document.getElementById('question-form').action = `/forum/${id}`;
+            });
+        });
+
+        function toggleNameInput(checkbox) {
+            const nameField = document.getElementById('name-field');
+            nameField.style.display = checkbox.checked ? 'none' : 'block';
+        }
+    </script>
+
 
 
     <footer id="footer" class="footer">
@@ -262,7 +301,8 @@
                     <div class="social-links d-flex mt-4">
                         <a href="https://x.com/zyuuwy?t=ALZvMAtwuLwZW5XPjrOC5Q&s=09"><i class="bi bi-twitter-x"></i></a>
                         <a href="https://www.facebook.com/share/16bWmJa4SA/"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.instagram.com/gizipedia_3code?igsh=bXcwd25lemJ5M2Nn"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.instagram.com/gizipedia_3code?igsh=bXcwd25lemJ5M2Nn"><i
+                                class="bi bi-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/alya-kania-7263a3306/"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>

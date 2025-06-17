@@ -6,9 +6,11 @@ use App\Filament\Resources\ForumResource\Pages;
 use App\Filament\Resources\ForumResource\RelationManagers;
 use App\Models\Forum;
 use Filament\Forms;
+use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
@@ -23,7 +25,9 @@ class ForumResource extends Resource
     {
         return $form
             ->schema([
-                //
+                TextInput::make('name')->required(),
+                TextInput::make('question')->required(),
+                TextInput::make('is_anonim')->required(),
             ]);
     }
 
@@ -31,7 +35,11 @@ class ForumResource extends Resource
     {
         return $table
             ->columns([
-                //
+                TextColumn::make('name'),
+                TextColumn::make('question'),
+                TextColumn::make('is_anonim'),
+                TextColumn::make('created_at'),
+                TextColumn::make('updated_at'),
             ])
             ->filters([
                 //

@@ -60,4 +60,17 @@ class ForumController extends Controller
         return back()->with('success', 'Jawaban berhasil dikirim.');
     }
 
+    public function update(Request $request, $id)
+    {
+        $question = Forum::findOrFail($id);
+
+        $question->update([
+            'name' => $request->is_anonim ? null : $request->name,
+            'is_anonim' => $request->has('is_anonim'),
+            'question' => $request->question,
+        ]);
+
+        return redirect()->back()->with('success', 'Pertanyaan berhasil diperbarui!');
+    }
+
 }

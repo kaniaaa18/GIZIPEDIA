@@ -31,6 +31,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/forum', [ForumController::class, 'index'])->name('forum.index');
     Route::post('/forum', [ForumController::class, 'store'])->name('forum.store');
     Route::post('/forum/{id}/answer', [ForumController::class, 'storeAnswer'])->name('forum.answer');
+    Route::put('/forum/{id}', [ForumController::class, 'update'])->name('forum.update');
 
     // RECIPE
     Route::get('/recipe', [RecipeController::class, 'index'])->name('recipe.index');

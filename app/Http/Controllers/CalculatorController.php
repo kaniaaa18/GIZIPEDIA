@@ -39,16 +39,17 @@ class CalculatorController extends Controller
 
         $tinggiM = $tinggi / 100; // konversi cm ke m
         $bmi = $berat / ($tinggiM * $tinggiM);
-        
+
         if ($bmi < 18.5) {
-            $kategoriBmi = 'Kurus';
-        } elseif ($bmi < 24.9) {
+            $kategoriBmi = 'Underweight';
+        } elseif ($bmi >= 18.5 && $bmi < 25) {
             $kategoriBmi = 'Normal';
-        } elseif ($bmi < 29.9) {
-            $kategoriBmi = 'Kelebihan Berat Badan';
+        } elseif ($bmi >= 25 && $bmi < 30) {
+            $kategoriBmi = 'Overweight';
         } else {
-            $kategoriBmi = 'Kegemukan';
+            $kategoriBmi = 'Obesity';
         }
+
 
         if ($gender == 'Laki-laki') {
             $kalori = (10 * $berat) + (6.25 * $tinggi) - (5 * $usia) + 5;

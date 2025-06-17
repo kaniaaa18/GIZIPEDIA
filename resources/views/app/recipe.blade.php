@@ -214,8 +214,6 @@
                             </a>
                         </div>
                     @endforeach
-
-
     </section><!-- /Recipe Section -->
 
     <script>
